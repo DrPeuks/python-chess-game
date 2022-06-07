@@ -47,6 +47,9 @@ Windows:
 		`pip install pygame chess stockfish tk`
 
 
+If you have a GPU, then you can run Maia (lc0) using your GPU but CUDA and CUDNn have to be installed. Then you need to delete lc0-linux and rename lc0-linux-cuda to lc0-linux. Be careful, because lc0-linux which is basically running using OpenBlas won't run on computers with GPUs as the lc0 engine will detect a GPU to run on but it does not have the instructions on how to run on a GPU, and this will cause an illegal hardware isntruction, with a core dumped fault.
+
+
 And then you are ready to go :
 `python BlobChess.py`
 
