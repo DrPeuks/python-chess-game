@@ -345,6 +345,294 @@ namespace pblczero {
       bool has_se_{};
       SEunit se_{};
     };
+    class MHA : public lczero::ProtoMessage {
+     public:
+
+      bool has_q_w() const { return has_q_w_; }
+      const Layer& q_w() const { return q_w_; }
+      Layer* mutable_q_w() {
+        has_q_w_ = true;
+        return &q_w_;
+      }
+
+      bool has_q_b() const { return has_q_b_; }
+      const Layer& q_b() const { return q_b_; }
+      Layer* mutable_q_b() {
+        has_q_b_ = true;
+        return &q_b_;
+      }
+
+      bool has_k_w() const { return has_k_w_; }
+      const Layer& k_w() const { return k_w_; }
+      Layer* mutable_k_w() {
+        has_k_w_ = true;
+        return &k_w_;
+      }
+
+      bool has_k_b() const { return has_k_b_; }
+      const Layer& k_b() const { return k_b_; }
+      Layer* mutable_k_b() {
+        has_k_b_ = true;
+        return &k_b_;
+      }
+
+      bool has_v_w() const { return has_v_w_; }
+      const Layer& v_w() const { return v_w_; }
+      Layer* mutable_v_w() {
+        has_v_w_ = true;
+        return &v_w_;
+      }
+
+      bool has_v_b() const { return has_v_b_; }
+      const Layer& v_b() const { return v_b_; }
+      Layer* mutable_v_b() {
+        has_v_b_ = true;
+        return &v_b_;
+      }
+
+      bool has_dense_w() const { return has_dense_w_; }
+      const Layer& dense_w() const { return dense_w_; }
+      Layer* mutable_dense_w() {
+        has_dense_w_ = true;
+        return &dense_w_;
+      }
+
+      bool has_dense_b() const { return has_dense_b_; }
+      const Layer& dense_b() const { return dense_b_; }
+      Layer* mutable_dense_b() {
+        has_dense_b_ = true;
+        return &dense_b_;
+      }
+
+      std::string OutputAsString() const override {
+        std::string out;
+        if (has_q_w_) AppendString(1, q_w_.OutputAsString(), &out);
+        if (has_q_b_) AppendString(2, q_b_.OutputAsString(), &out);
+        if (has_k_w_) AppendString(3, k_w_.OutputAsString(), &out);
+        if (has_k_b_) AppendString(4, k_b_.OutputAsString(), &out);
+        if (has_v_w_) AppendString(5, v_w_.OutputAsString(), &out);
+        if (has_v_b_) AppendString(6, v_b_.OutputAsString(), &out);
+        if (has_dense_w_) AppendString(7, dense_w_.OutputAsString(), &out);
+        if (has_dense_b_) AppendString(8, dense_b_.OutputAsString(), &out);
+        return out;
+      }
+
+      void Clear() override {
+        has_q_w_ = false;
+        q_w_ = {};
+        has_q_b_ = false;
+        q_b_ = {};
+        has_k_w_ = false;
+        k_w_ = {};
+        has_k_b_ = false;
+        k_b_ = {};
+        has_v_w_ = false;
+        v_w_ = {};
+        has_v_b_ = false;
+        v_b_ = {};
+        has_dense_w_ = false;
+        dense_w_ = {};
+        has_dense_b_ = false;
+        dense_b_ = {};
+      }
+
+     private:
+      void SetString(int field_id, std::string_view val) override {
+        switch (field_id) {
+          case 1: mutable_q_w()->MergeFromString(val); break;
+          case 2: mutable_q_b()->MergeFromString(val); break;
+          case 3: mutable_k_w()->MergeFromString(val); break;
+          case 4: mutable_k_b()->MergeFromString(val); break;
+          case 5: mutable_v_w()->MergeFromString(val); break;
+          case 6: mutable_v_b()->MergeFromString(val); break;
+          case 7: mutable_dense_w()->MergeFromString(val); break;
+          case 8: mutable_dense_b()->MergeFromString(val); break;
+        }
+      }
+
+      bool has_q_w_{};
+      Layer q_w_{};
+      bool has_q_b_{};
+      Layer q_b_{};
+      bool has_k_w_{};
+      Layer k_w_{};
+      bool has_k_b_{};
+      Layer k_b_{};
+      bool has_v_w_{};
+      Layer v_w_{};
+      bool has_v_b_{};
+      Layer v_b_{};
+      bool has_dense_w_{};
+      Layer dense_w_{};
+      bool has_dense_b_{};
+      Layer dense_b_{};
+    };
+    class FFN : public lczero::ProtoMessage {
+     public:
+
+      bool has_dense1_w() const { return has_dense1_w_; }
+      const Layer& dense1_w() const { return dense1_w_; }
+      Layer* mutable_dense1_w() {
+        has_dense1_w_ = true;
+        return &dense1_w_;
+      }
+
+      bool has_dense1_b() const { return has_dense1_b_; }
+      const Layer& dense1_b() const { return dense1_b_; }
+      Layer* mutable_dense1_b() {
+        has_dense1_b_ = true;
+        return &dense1_b_;
+      }
+
+      bool has_dense2_w() const { return has_dense2_w_; }
+      const Layer& dense2_w() const { return dense2_w_; }
+      Layer* mutable_dense2_w() {
+        has_dense2_w_ = true;
+        return &dense2_w_;
+      }
+
+      bool has_dense2_b() const { return has_dense2_b_; }
+      const Layer& dense2_b() const { return dense2_b_; }
+      Layer* mutable_dense2_b() {
+        has_dense2_b_ = true;
+        return &dense2_b_;
+      }
+
+      std::string OutputAsString() const override {
+        std::string out;
+        if (has_dense1_w_) AppendString(1, dense1_w_.OutputAsString(), &out);
+        if (has_dense1_b_) AppendString(2, dense1_b_.OutputAsString(), &out);
+        if (has_dense2_w_) AppendString(3, dense2_w_.OutputAsString(), &out);
+        if (has_dense2_b_) AppendString(4, dense2_b_.OutputAsString(), &out);
+        return out;
+      }
+
+      void Clear() override {
+        has_dense1_w_ = false;
+        dense1_w_ = {};
+        has_dense1_b_ = false;
+        dense1_b_ = {};
+        has_dense2_w_ = false;
+        dense2_w_ = {};
+        has_dense2_b_ = false;
+        dense2_b_ = {};
+      }
+
+     private:
+      void SetString(int field_id, std::string_view val) override {
+        switch (field_id) {
+          case 1: mutable_dense1_w()->MergeFromString(val); break;
+          case 2: mutable_dense1_b()->MergeFromString(val); break;
+          case 3: mutable_dense2_w()->MergeFromString(val); break;
+          case 4: mutable_dense2_b()->MergeFromString(val); break;
+        }
+      }
+
+      bool has_dense1_w_{};
+      Layer dense1_w_{};
+      bool has_dense1_b_{};
+      Layer dense1_b_{};
+      bool has_dense2_w_{};
+      Layer dense2_w_{};
+      bool has_dense2_b_{};
+      Layer dense2_b_{};
+    };
+    class EncoderLayer : public lczero::ProtoMessage {
+     public:
+
+      bool has_mha() const { return has_mha_; }
+      const MHA& mha() const { return mha_; }
+      MHA* mutable_mha() {
+        has_mha_ = true;
+        return &mha_;
+      }
+
+      bool has_ln1_gammas() const { return has_ln1_gammas_; }
+      const Layer& ln1_gammas() const { return ln1_gammas_; }
+      Layer* mutable_ln1_gammas() {
+        has_ln1_gammas_ = true;
+        return &ln1_gammas_;
+      }
+
+      bool has_ln1_betas() const { return has_ln1_betas_; }
+      const Layer& ln1_betas() const { return ln1_betas_; }
+      Layer* mutable_ln1_betas() {
+        has_ln1_betas_ = true;
+        return &ln1_betas_;
+      }
+
+      bool has_ffn() const { return has_ffn_; }
+      const FFN& ffn() const { return ffn_; }
+      FFN* mutable_ffn() {
+        has_ffn_ = true;
+        return &ffn_;
+      }
+
+      bool has_ln2_gammas() const { return has_ln2_gammas_; }
+      const Layer& ln2_gammas() const { return ln2_gammas_; }
+      Layer* mutable_ln2_gammas() {
+        has_ln2_gammas_ = true;
+        return &ln2_gammas_;
+      }
+
+      bool has_ln2_betas() const { return has_ln2_betas_; }
+      const Layer& ln2_betas() const { return ln2_betas_; }
+      Layer* mutable_ln2_betas() {
+        has_ln2_betas_ = true;
+        return &ln2_betas_;
+      }
+
+      std::string OutputAsString() const override {
+        std::string out;
+        if (has_mha_) AppendString(1, mha_.OutputAsString(), &out);
+        if (has_ln1_gammas_) AppendString(2, ln1_gammas_.OutputAsString(), &out);
+        if (has_ln1_betas_) AppendString(3, ln1_betas_.OutputAsString(), &out);
+        if (has_ffn_) AppendString(4, ffn_.OutputAsString(), &out);
+        if (has_ln2_gammas_) AppendString(5, ln2_gammas_.OutputAsString(), &out);
+        if (has_ln2_betas_) AppendString(6, ln2_betas_.OutputAsString(), &out);
+        return out;
+      }
+
+      void Clear() override {
+        has_mha_ = false;
+        mha_ = {};
+        has_ln1_gammas_ = false;
+        ln1_gammas_ = {};
+        has_ln1_betas_ = false;
+        ln1_betas_ = {};
+        has_ffn_ = false;
+        ffn_ = {};
+        has_ln2_gammas_ = false;
+        ln2_gammas_ = {};
+        has_ln2_betas_ = false;
+        ln2_betas_ = {};
+      }
+
+     private:
+      void SetString(int field_id, std::string_view val) override {
+        switch (field_id) {
+          case 1: mutable_mha()->MergeFromString(val); break;
+          case 2: mutable_ln1_gammas()->MergeFromString(val); break;
+          case 3: mutable_ln1_betas()->MergeFromString(val); break;
+          case 4: mutable_ffn()->MergeFromString(val); break;
+          case 5: mutable_ln2_gammas()->MergeFromString(val); break;
+          case 6: mutable_ln2_betas()->MergeFromString(val); break;
+        }
+      }
+
+      bool has_mha_{};
+      MHA mha_{};
+      bool has_ln1_gammas_{};
+      Layer ln1_gammas_{};
+      bool has_ln1_betas_{};
+      Layer ln1_betas_{};
+      bool has_ffn_{};
+      FFN ffn_{};
+      bool has_ln2_gammas_{};
+      Layer ln2_gammas_{};
+      bool has_ln2_betas_{};
+      Layer ln2_betas_{};
+    };
 
     bool has_input() const { return has_input_; }
     const ConvBlock& input() const { return input_; }
@@ -357,6 +645,18 @@ namespace pblczero {
     const std::vector<Residual>& residual() const { return residual_; }
     const Residual& residual(size_t idx) const { return residual_[idx]; }
     size_t residual_size() const { return residual_.size(); }
+
+    EncoderLayer* add_pol_encoder() { return &pol_encoder_.emplace_back(); }
+    const std::vector<EncoderLayer>& pol_encoder() const { return pol_encoder_; }
+    const EncoderLayer& pol_encoder(size_t idx) const { return pol_encoder_[idx]; }
+    size_t pol_encoder_size() const { return pol_encoder_.size(); }
+
+    bool has_pol_headcount() const { return has_pol_headcount_; }
+    std::uint32_t pol_headcount() const { return pol_headcount_; }
+    void set_pol_headcount(std::uint32_t val) {
+      has_pol_headcount_ = true;
+      pol_headcount_ = val;
+    }
 
     bool has_policy1() const { return has_policy1_; }
     const ConvBlock& policy1() const { return policy1_; }
@@ -384,6 +684,41 @@ namespace pblczero {
     Layer* mutable_ip_pol_b() {
       has_ip_pol_b_ = true;
       return &ip_pol_b_;
+    }
+
+    bool has_ip2_pol_w() const { return has_ip2_pol_w_; }
+    const Layer& ip2_pol_w() const { return ip2_pol_w_; }
+    Layer* mutable_ip2_pol_w() {
+      has_ip2_pol_w_ = true;
+      return &ip2_pol_w_;
+    }
+
+    bool has_ip2_pol_b() const { return has_ip2_pol_b_; }
+    const Layer& ip2_pol_b() const { return ip2_pol_b_; }
+    Layer* mutable_ip2_pol_b() {
+      has_ip2_pol_b_ = true;
+      return &ip2_pol_b_;
+    }
+
+    bool has_ip3_pol_w() const { return has_ip3_pol_w_; }
+    const Layer& ip3_pol_w() const { return ip3_pol_w_; }
+    Layer* mutable_ip3_pol_w() {
+      has_ip3_pol_w_ = true;
+      return &ip3_pol_w_;
+    }
+
+    bool has_ip3_pol_b() const { return has_ip3_pol_b_; }
+    const Layer& ip3_pol_b() const { return ip3_pol_b_; }
+    Layer* mutable_ip3_pol_b() {
+      has_ip3_pol_b_ = true;
+      return &ip3_pol_b_;
+    }
+
+    bool has_ip4_pol_w() const { return has_ip4_pol_w_; }
+    const Layer& ip4_pol_w() const { return ip4_pol_w_; }
+    Layer* mutable_ip4_pol_w() {
+      has_ip4_pol_w_ = true;
+      return &ip4_pol_w_;
     }
 
     bool has_value() const { return has_value_; }
@@ -474,6 +809,13 @@ namespace pblczero {
       if (has_ip1_mov_b_) AppendString(14, ip1_mov_b_.OutputAsString(), &out);
       if (has_ip2_mov_w_) AppendString(15, ip2_mov_w_.OutputAsString(), &out);
       if (has_ip2_mov_b_) AppendString(16, ip2_mov_b_.OutputAsString(), &out);
+      if (has_ip2_pol_w_) AppendString(17, ip2_pol_w_.OutputAsString(), &out);
+      if (has_ip2_pol_b_) AppendString(18, ip2_pol_b_.OutputAsString(), &out);
+      if (has_ip3_pol_w_) AppendString(19, ip3_pol_w_.OutputAsString(), &out);
+      if (has_ip3_pol_b_) AppendString(20, ip3_pol_b_.OutputAsString(), &out);
+      for (const auto& x : pol_encoder_) AppendString(21, x.OutputAsString(), &out);
+      if (has_ip4_pol_w_) AppendString(22, ip4_pol_w_.OutputAsString(), &out);
+      if (has_pol_headcount_) AppendVarInt(24, pol_headcount_, &out);
       return out;
     }
 
@@ -481,6 +823,9 @@ namespace pblczero {
       has_input_ = false;
       input_ = {};
       residual_.clear();
+      pol_encoder_.clear();
+      has_pol_headcount_ = false;
+      pol_headcount_ = {};
       has_policy1_ = false;
       policy1_ = {};
       has_policy_ = false;
@@ -489,6 +834,16 @@ namespace pblczero {
       ip_pol_w_ = {};
       has_ip_pol_b_ = false;
       ip_pol_b_ = {};
+      has_ip2_pol_w_ = false;
+      ip2_pol_w_ = {};
+      has_ip2_pol_b_ = false;
+      ip2_pol_b_ = {};
+      has_ip3_pol_w_ = false;
+      ip3_pol_w_ = {};
+      has_ip3_pol_b_ = false;
+      ip3_pol_b_ = {};
+      has_ip4_pol_w_ = false;
+      ip4_pol_w_ = {};
       has_value_ = false;
       value_ = {};
       has_ip1_val_w_ = false;
@@ -516,10 +871,16 @@ namespace pblczero {
       switch (field_id) {
         case 1: mutable_input()->MergeFromString(val); break;
         case 2: add_residual()->MergeFromString(val); break;
+        case 21: add_pol_encoder()->MergeFromString(val); break;
         case 11: mutable_policy1()->MergeFromString(val); break;
         case 3: mutable_policy()->MergeFromString(val); break;
         case 4: mutable_ip_pol_w()->MergeFromString(val); break;
         case 5: mutable_ip_pol_b()->MergeFromString(val); break;
+        case 17: mutable_ip2_pol_w()->MergeFromString(val); break;
+        case 18: mutable_ip2_pol_b()->MergeFromString(val); break;
+        case 19: mutable_ip3_pol_w()->MergeFromString(val); break;
+        case 20: mutable_ip3_pol_b()->MergeFromString(val); break;
+        case 22: mutable_ip4_pol_w()->MergeFromString(val); break;
         case 6: mutable_value()->MergeFromString(val); break;
         case 7: mutable_ip1_val_w()->MergeFromString(val); break;
         case 8: mutable_ip1_val_b()->MergeFromString(val); break;
@@ -532,10 +893,18 @@ namespace pblczero {
         case 16: mutable_ip2_mov_b()->MergeFromString(val); break;
       }
     }
+    void SetVarInt(int field_id, std::uint64_t val) override {
+      switch (field_id) {
+        case 24: set_pol_headcount(static_cast<std::uint32_t>(val)); break;
+      }
+    }
 
     bool has_input_{};
     ConvBlock input_{};
     std::vector<Residual> residual_;
+    std::vector<EncoderLayer> pol_encoder_;
+    bool has_pol_headcount_{};
+    std::uint32_t pol_headcount_{};
     bool has_policy1_{};
     ConvBlock policy1_{};
     bool has_policy_{};
@@ -544,6 +913,16 @@ namespace pblczero {
     Layer ip_pol_w_{};
     bool has_ip_pol_b_{};
     Layer ip_pol_b_{};
+    bool has_ip2_pol_w_{};
+    Layer ip2_pol_w_{};
+    bool has_ip2_pol_b_{};
+    Layer ip2_pol_b_{};
+    bool has_ip3_pol_w_{};
+    Layer ip3_pol_w_{};
+    bool has_ip3_pol_b_{};
+    Layer ip3_pol_b_{};
+    bool has_ip4_pol_w_{};
+    Layer ip4_pol_w_{};
     bool has_value_{};
     ConvBlock value_{};
     bool has_ip1_val_w_{};
@@ -770,11 +1149,13 @@ namespace pblczero {
       POLICY_UNKNOWN = 0,
       POLICY_CLASSICAL = 1,
       POLICY_CONVOLUTION = 2,
+      POLICY_ATTENTION = 3,
     };
-    static constexpr std::array<PolicyFormat,3> PolicyFormat_AllValues = {
+    static constexpr std::array<PolicyFormat,4> PolicyFormat_AllValues = {
       POLICY_UNKNOWN,
       POLICY_CLASSICAL,
       POLICY_CONVOLUTION,
+      POLICY_ATTENTION,
     };
     static std::string PolicyFormat_Name(PolicyFormat val) {
       switch (val) {
@@ -784,6 +1165,8 @@ namespace pblczero {
           return "POLICY_CLASSICAL";
         case POLICY_CONVOLUTION:
           return "POLICY_CONVOLUTION";
+        case POLICY_ATTENTION:
+          return "POLICY_ATTENTION";
       };
       return "PolicyFormat(" + std::to_string(val) + ")";
     }
@@ -829,6 +1212,23 @@ namespace pblczero {
       };
       return "MovesLeftFormat(" + std::to_string(val) + ")";
     }
+    enum DefaultActivation {
+      DEFAULT_ACTIVATION_RELU = 0,
+      DEFAULT_ACTIVATION_MISH = 1,
+    };
+    static constexpr std::array<DefaultActivation,2> DefaultActivation_AllValues = {
+      DEFAULT_ACTIVATION_RELU,
+      DEFAULT_ACTIVATION_MISH,
+    };
+    static std::string DefaultActivation_Name(DefaultActivation val) {
+      switch (val) {
+        case DEFAULT_ACTIVATION_RELU:
+          return "DEFAULT_ACTIVATION_RELU";
+        case DEFAULT_ACTIVATION_MISH:
+          return "DEFAULT_ACTIVATION_MISH";
+      };
+      return "DefaultActivation(" + std::to_string(val) + ")";
+    }
 
     bool has_input() const { return has_input_; }
     InputFormat input() const { return input_; }
@@ -872,6 +1272,13 @@ namespace pblczero {
       moves_left_ = val;
     }
 
+    bool has_default_activation() const { return has_default_activation_; }
+    DefaultActivation default_activation() const { return default_activation_; }
+    void set_default_activation(DefaultActivation val) {
+      has_default_activation_ = true;
+      default_activation_ = val;
+    }
+
     std::string OutputAsString() const override {
       std::string out;
       if (has_input_) AppendVarInt(1, input_, &out);
@@ -880,6 +1287,7 @@ namespace pblczero {
       if (has_policy_) AppendVarInt(4, policy_, &out);
       if (has_value_) AppendVarInt(5, value_, &out);
       if (has_moves_left_) AppendVarInt(6, moves_left_, &out);
+      if (has_default_activation_) AppendVarInt(7, default_activation_, &out);
       return out;
     }
 
@@ -896,6 +1304,8 @@ namespace pblczero {
       value_ = {};
       has_moves_left_ = false;
       moves_left_ = {};
+      has_default_activation_ = false;
+      default_activation_ = {};
     }
 
    private:
@@ -907,6 +1317,7 @@ namespace pblczero {
         case 4: set_policy(static_cast<PolicyFormat>(val)); break;
         case 5: set_value(static_cast<ValueFormat>(val)); break;
         case 6: set_moves_left(static_cast<MovesLeftFormat>(val)); break;
+        case 7: set_default_activation(static_cast<DefaultActivation>(val)); break;
       }
     }
 
@@ -922,6 +1333,8 @@ namespace pblczero {
     ValueFormat value_{};
     bool has_moves_left_{};
     MovesLeftFormat moves_left_{};
+    bool has_default_activation_{};
+    DefaultActivation default_activation_{};
   };
   class Format : public lczero::ProtoMessage {
    public:
