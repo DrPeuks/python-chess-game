@@ -295,7 +295,7 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
     for line in iter(p.stdout.readline, ''):
    
-    
+        print(line)
         line = line.strip()
 
         if line.startswith("bestmove"):
