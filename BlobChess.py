@@ -281,7 +281,7 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
     mvList = ""
     for m in _mvList:
-        mvList += m+" "
+        mvList += str(m)+" "
 
 
     if wtm:
