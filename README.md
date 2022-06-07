@@ -1,5 +1,5 @@
 # BlobChess
-A chess game written in Python based on python-chess and PyGame with which you can play against the Fairy Stockfish, a random move generator and Maia Chess.
+A chess game written in Python based on python-chess and PyGame with which you can play against the Fairy Stockfish, a random move generator and Maia Chess. The Stockfish 14 NNUE evaluation is also available.
 
 First of all, I would like to thank:
 
