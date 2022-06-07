@@ -15,7 +15,7 @@ First of all, I would like to thank:
     https://github.com/CSSLab/maia-chess
 
   Lichess for information about the Fairy-stockfish settings to make different levels:
-    https:/lichess.org/
+    https:/lichess.org
 
   And the Leela Chess Zero developers:
     https://github.com/LeelaChessZero/lc0
