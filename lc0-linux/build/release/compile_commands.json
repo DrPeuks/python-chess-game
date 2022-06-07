@@ -1,0 +1,806 @@
+[
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_main.cc.o -MF lc0.p/src_main.cc.o.d -o lc0.p/src_main.cc.o -c ../../src/main.cc",
+    "file": "../../src/main.cc",
+    "output": "lc0.p/src_main.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_protomessage.cc.o -MF lc0.p/src_utils_protomessage.cc.o.d -o lc0.p/src_utils_protomessage.cc.o -c ../../src/utils/protomessage.cc",
+    "file": "../../src/utils/protomessage.cc",
+    "output": "lc0.p/src_utils_protomessage.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_benchmark_backendbench.cc.o -MF lc0.p/src_benchmark_backendbench.cc.o.d -o lc0.p/src_benchmark_backendbench.cc.o -c ../../src/benchmark/backendbench.cc",
+    "file": "../../src/benchmark/backendbench.cc",
+    "output": "lc0.p/src_benchmark_backendbench.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_benchmark_benchmark.cc.o -MF lc0.p/src_benchmark_benchmark.cc.o.d -o lc0.p/src_benchmark_benchmark.cc.o -c ../../src/benchmark/benchmark.cc",
+    "file": "../../src/benchmark/benchmark.cc",
+    "output": "lc0.p/src_benchmark_benchmark.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_chess_bitboard.cc.o -MF lc0.p/src_chess_bitboard.cc.o.d -o lc0.p/src_chess_bitboard.cc.o -c ../../src/chess/bitboard.cc",
+    "file": "../../src/chess/bitboard.cc",
+    "output": "lc0.p/src_chess_bitboard.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_chess_board.cc.o -MF lc0.p/src_chess_board.cc.o.d -o lc0.p/src_chess_board.cc.o -c ../../src/chess/board.cc",
+    "file": "../../src/chess/board.cc",
+    "output": "lc0.p/src_chess_board.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_chess_position.cc.o -MF lc0.p/src_chess_position.cc.o.d -o lc0.p/src_chess_position.cc.o -c ../../src/chess/position.cc",
+    "file": "../../src/chess/position.cc",
+    "output": "lc0.p/src_chess_position.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_chess_uciloop.cc.o -MF lc0.p/src_chess_uciloop.cc.o.d -o lc0.p/src_chess_uciloop.cc.o -c ../../src/chess/uciloop.cc",
+    "file": "../../src/chess/uciloop.cc",
+    "output": "lc0.p/src_chess_uciloop.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_engine.cc.o -MF lc0.p/src_engine.cc.o.d -o lc0.p/src_engine.cc.o -c ../../src/engine.cc",
+    "file": "../../src/engine.cc",
+    "output": "lc0.p/src_engine.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_lc0ctl_describenet.cc.o -MF lc0.p/src_lc0ctl_describenet.cc.o.d -o lc0.p/src_lc0ctl_describenet.cc.o -c ../../src/lc0ctl/describenet.cc",
+    "file": "../../src/lc0ctl/describenet.cc",
+    "output": "lc0.p/src_lc0ctl_describenet.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_lc0ctl_leela2onnx.cc.o -MF lc0.p/src_lc0ctl_leela2onnx.cc.o.d -o lc0.p/src_lc0ctl_leela2onnx.cc.o -c ../../src/lc0ctl/leela2onnx.cc",
+    "file": "../../src/lc0ctl/leela2onnx.cc",
+    "output": "lc0.p/src_lc0ctl_leela2onnx.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_lc0ctl_onnx2leela.cc.o -MF lc0.p/src_lc0ctl_onnx2leela.cc.o.d -o lc0.p/src_lc0ctl_onnx2leela.cc.o -c ../../src/lc0ctl/onnx2leela.cc",
+    "file": "../../src/lc0ctl/onnx2leela.cc",
+    "output": "lc0.p/src_lc0ctl_onnx2leela.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_node.cc.o -MF lc0.p/src_mcts_node.cc.o.d -o lc0.p/src_mcts_node.cc.o -c ../../src/mcts/node.cc",
+    "file": "../../src/mcts/node.cc",
+    "output": "lc0.p/src_mcts_node.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_params.cc.o -MF lc0.p/src_mcts_params.cc.o.d -o lc0.p/src_mcts_params.cc.o -c ../../src/mcts/params.cc",
+    "file": "../../src/mcts/params.cc",
+    "output": "lc0.p/src_mcts_params.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_search.cc.o -MF lc0.p/src_mcts_search.cc.o.d -o lc0.p/src_mcts_search.cc.o -c ../../src/mcts/search.cc",
+    "file": "../../src/mcts/search.cc",
+    "output": "lc0.p/src_mcts_search.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_alphazero.cc.o -MF lc0.p/src_mcts_stoppers_alphazero.cc.o.d -o lc0.p/src_mcts_stoppers_alphazero.cc.o -c ../../src/mcts/stoppers/alphazero.cc",
+    "file": "../../src/mcts/stoppers/alphazero.cc",
+    "output": "lc0.p/src_mcts_stoppers_alphazero.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_common.cc.o -MF lc0.p/src_mcts_stoppers_common.cc.o.d -o lc0.p/src_mcts_stoppers_common.cc.o -c ../../src/mcts/stoppers/common.cc",
+    "file": "../../src/mcts/stoppers/common.cc",
+    "output": "lc0.p/src_mcts_stoppers_common.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_factory.cc.o -MF lc0.p/src_mcts_stoppers_factory.cc.o.d -o lc0.p/src_mcts_stoppers_factory.cc.o -c ../../src/mcts/stoppers/factory.cc",
+    "file": "../../src/mcts/stoppers/factory.cc",
+    "output": "lc0.p/src_mcts_stoppers_factory.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_legacy.cc.o -MF lc0.p/src_mcts_stoppers_legacy.cc.o.d -o lc0.p/src_mcts_stoppers_legacy.cc.o -c ../../src/mcts/stoppers/legacy.cc",
+    "file": "../../src/mcts/stoppers/legacy.cc",
+    "output": "lc0.p/src_mcts_stoppers_legacy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_smooth.cc.o -MF lc0.p/src_mcts_stoppers_smooth.cc.o.d -o lc0.p/src_mcts_stoppers_smooth.cc.o -c ../../src/mcts/stoppers/smooth.cc",
+    "file": "../../src/mcts/stoppers/smooth.cc",
+    "output": "lc0.p/src_mcts_stoppers_smooth.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_stoppers.cc.o -MF lc0.p/src_mcts_stoppers_stoppers.cc.o.d -o lc0.p/src_mcts_stoppers_stoppers.cc.o -c ../../src/mcts/stoppers/stoppers.cc",
+    "file": "../../src/mcts/stoppers/stoppers.cc",
+    "output": "lc0.p/src_mcts_stoppers_stoppers.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_mcts_stoppers_timemgr.cc.o -MF lc0.p/src_mcts_stoppers_timemgr.cc.o.d -o lc0.p/src_mcts_stoppers_timemgr.cc.o -c ../../src/mcts/stoppers/timemgr.cc",
+    "file": "../../src/mcts/stoppers/timemgr.cc",
+    "output": "lc0.p/src_mcts_stoppers_timemgr.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_cache.cc.o -MF lc0.p/src_neural_cache.cc.o.d -o lc0.p/src_neural_cache.cc.o -c ../../src/neural/cache.cc",
+    "file": "../../src/neural/cache.cc",
+    "output": "lc0.p/src_neural_cache.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_decoder.cc.o -MF lc0.p/src_neural_decoder.cc.o.d -o lc0.p/src_neural_decoder.cc.o -c ../../src/neural/decoder.cc",
+    "file": "../../src/neural/decoder.cc",
+    "output": "lc0.p/src_neural_decoder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_encoder.cc.o -MF lc0.p/src_neural_encoder.cc.o.d -o lc0.p/src_neural_encoder.cc.o -c ../../src/neural/encoder.cc",
+    "file": "../../src/neural/encoder.cc",
+    "output": "lc0.p/src_neural_encoder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_factory.cc.o -MF lc0.p/src_neural_factory.cc.o.d -o lc0.p/src_neural_factory.cc.o -c ../../src/neural/factory.cc",
+    "file": "../../src/neural/factory.cc",
+    "output": "lc0.p/src_neural_factory.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_loader.cc.o -MF lc0.p/src_neural_loader.cc.o.d -o lc0.p/src_neural_loader.cc.o -c ../../src/neural/loader.cc",
+    "file": "../../src/neural/loader.cc",
+    "output": "lc0.p/src_neural_loader.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_check.cc.o -MF lc0.p/src_neural_network_check.cc.o.d -o lc0.p/src_neural_network_check.cc.o -c ../../src/neural/network_check.cc",
+    "file": "../../src/neural/network_check.cc",
+    "output": "lc0.p/src_neural_network_check.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_demux.cc.o -MF lc0.p/src_neural_network_demux.cc.o.d -o lc0.p/src_neural_network_demux.cc.o -c ../../src/neural/network_demux.cc",
+    "file": "../../src/neural/network_demux.cc",
+    "output": "lc0.p/src_neural_network_demux.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_legacy.cc.o -MF lc0.p/src_neural_network_legacy.cc.o.d -o lc0.p/src_neural_network_legacy.cc.o -c ../../src/neural/network_legacy.cc",
+    "file": "../../src/neural/network_legacy.cc",
+    "output": "lc0.p/src_neural_network_legacy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_mux.cc.o -MF lc0.p/src_neural_network_mux.cc.o.d -o lc0.p/src_neural_network_mux.cc.o -c ../../src/neural/network_mux.cc",
+    "file": "../../src/neural/network_mux.cc",
+    "output": "lc0.p/src_neural_network_mux.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_random.cc.o -MF lc0.p/src_neural_network_random.cc.o.d -o lc0.p/src_neural_network_random.cc.o -c ../../src/neural/network_random.cc",
+    "file": "../../src/neural/network_random.cc",
+    "output": "lc0.p/src_neural_network_random.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_record.cc.o -MF lc0.p/src_neural_network_record.cc.o.d -o lc0.p/src_neural_network_record.cc.o -c ../../src/neural/network_record.cc",
+    "file": "../../src/neural/network_record.cc",
+    "output": "lc0.p/src_neural_network_record.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_network_rr.cc.o -MF lc0.p/src_neural_network_rr.cc.o.d -o lc0.p/src_neural_network_rr.cc.o -c ../../src/neural/network_rr.cc",
+    "file": "../../src/neural/network_rr.cc",
+    "output": "lc0.p/src_neural_network_rr.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_reader.cc.o -MF lc0.p/src_neural_reader.cc.o.d -o lc0.p/src_neural_reader.cc.o -c ../../src/neural/reader.cc",
+    "file": "../../src/neural/reader.cc",
+    "output": "lc0.p/src_neural_reader.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_onnx_adapters.cc.o -MF lc0.p/src_neural_onnx_adapters.cc.o.d -o lc0.p/src_neural_onnx_adapters.cc.o -c ../../src/neural/onnx/adapters.cc",
+    "file": "../../src/neural/onnx/adapters.cc",
+    "output": "lc0.p/src_neural_onnx_adapters.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_onnx_builder.cc.o -MF lc0.p/src_neural_onnx_builder.cc.o.d -o lc0.p/src_neural_onnx_builder.cc.o -c ../../src/neural/onnx/builder.cc",
+    "file": "../../src/neural/onnx/builder.cc",
+    "output": "lc0.p/src_neural_onnx_builder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_onnx_converter.cc.o -MF lc0.p/src_neural_onnx_converter.cc.o.d -o lc0.p/src_neural_onnx_converter.cc.o -c ../../src/neural/onnx/converter.cc",
+    "file": "../../src/neural/onnx/converter.cc",
+    "output": "lc0.p/src_neural_onnx_converter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_writer.cc.o -MF lc0.p/src_neural_writer.cc.o.d -o lc0.p/src_neural_writer.cc.o -c ../../src/neural/writer.cc",
+    "file": "../../src/neural/writer.cc",
+    "output": "lc0.p/src_neural_writer.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_selfplay_game.cc.o -MF lc0.p/src_selfplay_game.cc.o.d -o lc0.p/src_selfplay_game.cc.o -c ../../src/selfplay/game.cc",
+    "file": "../../src/selfplay/game.cc",
+    "output": "lc0.p/src_selfplay_game.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_selfplay_loop.cc.o -MF lc0.p/src_selfplay_loop.cc.o.d -o lc0.p/src_selfplay_loop.cc.o -c ../../src/selfplay/loop.cc",
+    "file": "../../src/selfplay/loop.cc",
+    "output": "lc0.p/src_selfplay_loop.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_selfplay_tournament.cc.o -MF lc0.p/src_selfplay_tournament.cc.o.d -o lc0.p/src_selfplay_tournament.cc.o -c ../../src/selfplay/tournament.cc",
+    "file": "../../src/selfplay/tournament.cc",
+    "output": "lc0.p/src_selfplay_tournament.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_syzygy_syzygy.cc.o -MF lc0.p/src_syzygy_syzygy.cc.o.d -o lc0.p/src_syzygy_syzygy.cc.o -c ../../src/syzygy/syzygy.cc",
+    "file": "../../src/syzygy/syzygy.cc",
+    "output": "lc0.p/src_syzygy_syzygy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_commandline.cc.o -MF lc0.p/src_utils_commandline.cc.o.d -o lc0.p/src_utils_commandline.cc.o -c ../../src/utils/commandline.cc",
+    "file": "../../src/utils/commandline.cc",
+    "output": "lc0.p/src_utils_commandline.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_configfile.cc.o -MF lc0.p/src_utils_configfile.cc.o.d -o lc0.p/src_utils_configfile.cc.o -c ../../src/utils/configfile.cc",
+    "file": "../../src/utils/configfile.cc",
+    "output": "lc0.p/src_utils_configfile.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_esc_codes.cc.o -MF lc0.p/src_utils_esc_codes.cc.o.d -o lc0.p/src_utils_esc_codes.cc.o -c ../../src/utils/esc_codes.cc",
+    "file": "../../src/utils/esc_codes.cc",
+    "output": "lc0.p/src_utils_esc_codes.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_files.cc.o -MF lc0.p/src_utils_files.cc.o.d -o lc0.p/src_utils_files.cc.o -c ../../src/utils/files.cc",
+    "file": "../../src/utils/files.cc",
+    "output": "lc0.p/src_utils_files.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_histogram.cc.o -MF lc0.p/src_utils_histogram.cc.o.d -o lc0.p/src_utils_histogram.cc.o -c ../../src/utils/histogram.cc",
+    "file": "../../src/utils/histogram.cc",
+    "output": "lc0.p/src_utils_histogram.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_logging.cc.o -MF lc0.p/src_utils_logging.cc.o.d -o lc0.p/src_utils_logging.cc.o -c ../../src/utils/logging.cc",
+    "file": "../../src/utils/logging.cc",
+    "output": "lc0.p/src_utils_logging.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_numa.cc.o -MF lc0.p/src_utils_numa.cc.o.d -o lc0.p/src_utils_numa.cc.o -c ../../src/utils/numa.cc",
+    "file": "../../src/utils/numa.cc",
+    "output": "lc0.p/src_utils_numa.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_optionsdict.cc.o -MF lc0.p/src_utils_optionsdict.cc.o.d -o lc0.p/src_utils_optionsdict.cc.o -c ../../src/utils/optionsdict.cc",
+    "file": "../../src/utils/optionsdict.cc",
+    "output": "lc0.p/src_utils_optionsdict.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_optionsparser.cc.o -MF lc0.p/src_utils_optionsparser.cc.o.d -o lc0.p/src_utils_optionsparser.cc.o -c ../../src/utils/optionsparser.cc",
+    "file": "../../src/utils/optionsparser.cc",
+    "output": "lc0.p/src_utils_optionsparser.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_random.cc.o -MF lc0.p/src_utils_random.cc.o.d -o lc0.p/src_utils_random.cc.o -c ../../src/utils/random.cc",
+    "file": "../../src/utils/random.cc",
+    "output": "lc0.p/src_utils_random.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_string.cc.o -MF lc0.p/src_utils_string.cc.o.d -o lc0.p/src_utils_string.cc.o -c ../../src/utils/string.cc",
+    "file": "../../src/utils/string.cc",
+    "output": "lc0.p/src_utils_string.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_weights_adapter.cc.o -MF lc0.p/src_utils_weights_adapter.cc.o.d -o lc0.p/src_utils_weights_adapter.cc.o -c ../../src/utils/weights_adapter.cc",
+    "file": "../../src/utils/weights_adapter.cc",
+    "output": "lc0.p/src_utils_weights_adapter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_version.cc.o -MF lc0.p/src_version.cc.o.d -o lc0.p/src_version.cc.o -c ../../src/version.cc",
+    "file": "../../src/version.cc",
+    "output": "lc0.p/src_version.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_utils_filesystem.posix.cc.o -MF lc0.p/src_utils_filesystem.posix.cc.o.d -o lc0.p/src_utils_filesystem.posix.cc.o -c ../../src/utils/filesystem.posix.cc",
+    "file": "../../src/utils/filesystem.posix.cc",
+    "output": "lc0.p/src_utils_filesystem.posix.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_blas_convolution1.cc.o -MF lc0.p/src_neural_blas_convolution1.cc.o.d -o lc0.p/src_neural_blas_convolution1.cc.o -c ../../src/neural/blas/convolution1.cc",
+    "file": "../../src/neural/blas/convolution1.cc",
+    "output": "lc0.p/src_neural_blas_convolution1.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_blas_fully_connected_layer.cc.o -MF lc0.p/src_neural_blas_fully_connected_layer.cc.o.d -o lc0.p/src_neural_blas_fully_connected_layer.cc.o -c ../../src/neural/blas/fully_connected_layer.cc",
+    "file": "../../src/neural/blas/fully_connected_layer.cc",
+    "output": "lc0.p/src_neural_blas_fully_connected_layer.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_blas_se_unit.cc.o -MF lc0.p/src_neural_blas_se_unit.cc.o.d -o lc0.p/src_neural_blas_se_unit.cc.o -c ../../src/neural/blas/se_unit.cc",
+    "file": "../../src/neural/blas/se_unit.cc",
+    "output": "lc0.p/src_neural_blas_se_unit.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_blas_network_blas.cc.o -MF lc0.p/src_neural_blas_network_blas.cc.o.d -o lc0.p/src_neural_blas_network_blas.cc.o -c ../../src/neural/blas/network_blas.cc",
+    "file": "../../src/neural/blas/network_blas.cc",
+    "output": "lc0.p/src_neural_blas_network_blas.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_blas_winograd_convolution3.cc.o -MF lc0.p/src_neural_blas_winograd_convolution3.cc.o.d -o lc0.p/src_neural_blas_winograd_convolution3.cc.o -c ../../src/neural/blas/winograd_convolution3.cc",
+    "file": "../../src/neural/blas/winograd_convolution3.cc",
+    "output": "lc0.p/src_neural_blas_winograd_convolution3.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_shared_activation.cc.o -MF lc0.p/src_neural_shared_activation.cc.o.d -o lc0.p/src_neural_shared_activation.cc.o -c ../../src/neural/shared/activation.cc",
+    "file": "../../src/neural/shared/activation.cc",
+    "output": "lc0.p/src_neural_shared_activation.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ilc0.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ lc0.p/src_neural_shared_winograd_filter.cc.o -MF lc0.p/src_neural_shared_winograd_filter.cc.o.d -o lc0.p/src_neural_shared_winograd_filter.cc.o -c ../../src/neural/shared/winograd_filter.cc",
+    "file": "../../src/neural/shared/winograd_filter.cc",
+    "output": "lc0.p/src_neural_shared_winograd_filter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_protomessage.cc.o -MF liblc0_lib.so.p/src_utils_protomessage.cc.o.d -o liblc0_lib.so.p/src_utils_protomessage.cc.o -c ../../src/utils/protomessage.cc",
+    "file": "../../src/utils/protomessage.cc",
+    "output": "liblc0_lib.so.p/src_utils_protomessage.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_benchmark_backendbench.cc.o -MF liblc0_lib.so.p/src_benchmark_backendbench.cc.o.d -o liblc0_lib.so.p/src_benchmark_backendbench.cc.o -c ../../src/benchmark/backendbench.cc",
+    "file": "../../src/benchmark/backendbench.cc",
+    "output": "liblc0_lib.so.p/src_benchmark_backendbench.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_benchmark_benchmark.cc.o -MF liblc0_lib.so.p/src_benchmark_benchmark.cc.o.d -o liblc0_lib.so.p/src_benchmark_benchmark.cc.o -c ../../src/benchmark/benchmark.cc",
+    "file": "../../src/benchmark/benchmark.cc",
+    "output": "liblc0_lib.so.p/src_benchmark_benchmark.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_chess_bitboard.cc.o -MF liblc0_lib.so.p/src_chess_bitboard.cc.o.d -o liblc0_lib.so.p/src_chess_bitboard.cc.o -c ../../src/chess/bitboard.cc",
+    "file": "../../src/chess/bitboard.cc",
+    "output": "liblc0_lib.so.p/src_chess_bitboard.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_chess_board.cc.o -MF liblc0_lib.so.p/src_chess_board.cc.o.d -o liblc0_lib.so.p/src_chess_board.cc.o -c ../../src/chess/board.cc",
+    "file": "../../src/chess/board.cc",
+    "output": "liblc0_lib.so.p/src_chess_board.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_chess_position.cc.o -MF liblc0_lib.so.p/src_chess_position.cc.o.d -o liblc0_lib.so.p/src_chess_position.cc.o -c ../../src/chess/position.cc",
+    "file": "../../src/chess/position.cc",
+    "output": "liblc0_lib.so.p/src_chess_position.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_chess_uciloop.cc.o -MF liblc0_lib.so.p/src_chess_uciloop.cc.o.d -o liblc0_lib.so.p/src_chess_uciloop.cc.o -c ../../src/chess/uciloop.cc",
+    "file": "../../src/chess/uciloop.cc",
+    "output": "liblc0_lib.so.p/src_chess_uciloop.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_engine.cc.o -MF liblc0_lib.so.p/src_engine.cc.o.d -o liblc0_lib.so.p/src_engine.cc.o -c ../../src/engine.cc",
+    "file": "../../src/engine.cc",
+    "output": "liblc0_lib.so.p/src_engine.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_lc0ctl_describenet.cc.o -MF liblc0_lib.so.p/src_lc0ctl_describenet.cc.o.d -o liblc0_lib.so.p/src_lc0ctl_describenet.cc.o -c ../../src/lc0ctl/describenet.cc",
+    "file": "../../src/lc0ctl/describenet.cc",
+    "output": "liblc0_lib.so.p/src_lc0ctl_describenet.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_lc0ctl_leela2onnx.cc.o -MF liblc0_lib.so.p/src_lc0ctl_leela2onnx.cc.o.d -o liblc0_lib.so.p/src_lc0ctl_leela2onnx.cc.o -c ../../src/lc0ctl/leela2onnx.cc",
+    "file": "../../src/lc0ctl/leela2onnx.cc",
+    "output": "liblc0_lib.so.p/src_lc0ctl_leela2onnx.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_lc0ctl_onnx2leela.cc.o -MF liblc0_lib.so.p/src_lc0ctl_onnx2leela.cc.o.d -o liblc0_lib.so.p/src_lc0ctl_onnx2leela.cc.o -c ../../src/lc0ctl/onnx2leela.cc",
+    "file": "../../src/lc0ctl/onnx2leela.cc",
+    "output": "liblc0_lib.so.p/src_lc0ctl_onnx2leela.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_node.cc.o -MF liblc0_lib.so.p/src_mcts_node.cc.o.d -o liblc0_lib.so.p/src_mcts_node.cc.o -c ../../src/mcts/node.cc",
+    "file": "../../src/mcts/node.cc",
+    "output": "liblc0_lib.so.p/src_mcts_node.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_params.cc.o -MF liblc0_lib.so.p/src_mcts_params.cc.o.d -o liblc0_lib.so.p/src_mcts_params.cc.o -c ../../src/mcts/params.cc",
+    "file": "../../src/mcts/params.cc",
+    "output": "liblc0_lib.so.p/src_mcts_params.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_search.cc.o -MF liblc0_lib.so.p/src_mcts_search.cc.o.d -o liblc0_lib.so.p/src_mcts_search.cc.o -c ../../src/mcts/search.cc",
+    "file": "../../src/mcts/search.cc",
+    "output": "liblc0_lib.so.p/src_mcts_search.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_alphazero.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_alphazero.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_alphazero.cc.o -c ../../src/mcts/stoppers/alphazero.cc",
+    "file": "../../src/mcts/stoppers/alphazero.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_alphazero.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_common.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_common.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_common.cc.o -c ../../src/mcts/stoppers/common.cc",
+    "file": "../../src/mcts/stoppers/common.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_common.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_factory.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_factory.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_factory.cc.o -c ../../src/mcts/stoppers/factory.cc",
+    "file": "../../src/mcts/stoppers/factory.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_factory.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_legacy.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_legacy.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_legacy.cc.o -c ../../src/mcts/stoppers/legacy.cc",
+    "file": "../../src/mcts/stoppers/legacy.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_legacy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_smooth.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_smooth.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_smooth.cc.o -c ../../src/mcts/stoppers/smooth.cc",
+    "file": "../../src/mcts/stoppers/smooth.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_smooth.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_stoppers.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_stoppers.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_stoppers.cc.o -c ../../src/mcts/stoppers/stoppers.cc",
+    "file": "../../src/mcts/stoppers/stoppers.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_stoppers.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_mcts_stoppers_timemgr.cc.o -MF liblc0_lib.so.p/src_mcts_stoppers_timemgr.cc.o.d -o liblc0_lib.so.p/src_mcts_stoppers_timemgr.cc.o -c ../../src/mcts/stoppers/timemgr.cc",
+    "file": "../../src/mcts/stoppers/timemgr.cc",
+    "output": "liblc0_lib.so.p/src_mcts_stoppers_timemgr.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_cache.cc.o -MF liblc0_lib.so.p/src_neural_cache.cc.o.d -o liblc0_lib.so.p/src_neural_cache.cc.o -c ../../src/neural/cache.cc",
+    "file": "../../src/neural/cache.cc",
+    "output": "liblc0_lib.so.p/src_neural_cache.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_decoder.cc.o -MF liblc0_lib.so.p/src_neural_decoder.cc.o.d -o liblc0_lib.so.p/src_neural_decoder.cc.o -c ../../src/neural/decoder.cc",
+    "file": "../../src/neural/decoder.cc",
+    "output": "liblc0_lib.so.p/src_neural_decoder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_encoder.cc.o -MF liblc0_lib.so.p/src_neural_encoder.cc.o.d -o liblc0_lib.so.p/src_neural_encoder.cc.o -c ../../src/neural/encoder.cc",
+    "file": "../../src/neural/encoder.cc",
+    "output": "liblc0_lib.so.p/src_neural_encoder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_factory.cc.o -MF liblc0_lib.so.p/src_neural_factory.cc.o.d -o liblc0_lib.so.p/src_neural_factory.cc.o -c ../../src/neural/factory.cc",
+    "file": "../../src/neural/factory.cc",
+    "output": "liblc0_lib.so.p/src_neural_factory.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_loader.cc.o -MF liblc0_lib.so.p/src_neural_loader.cc.o.d -o liblc0_lib.so.p/src_neural_loader.cc.o -c ../../src/neural/loader.cc",
+    "file": "../../src/neural/loader.cc",
+    "output": "liblc0_lib.so.p/src_neural_loader.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_check.cc.o -MF liblc0_lib.so.p/src_neural_network_check.cc.o.d -o liblc0_lib.so.p/src_neural_network_check.cc.o -c ../../src/neural/network_check.cc",
+    "file": "../../src/neural/network_check.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_check.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_demux.cc.o -MF liblc0_lib.so.p/src_neural_network_demux.cc.o.d -o liblc0_lib.so.p/src_neural_network_demux.cc.o -c ../../src/neural/network_demux.cc",
+    "file": "../../src/neural/network_demux.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_demux.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_legacy.cc.o -MF liblc0_lib.so.p/src_neural_network_legacy.cc.o.d -o liblc0_lib.so.p/src_neural_network_legacy.cc.o -c ../../src/neural/network_legacy.cc",
+    "file": "../../src/neural/network_legacy.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_legacy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_mux.cc.o -MF liblc0_lib.so.p/src_neural_network_mux.cc.o.d -o liblc0_lib.so.p/src_neural_network_mux.cc.o -c ../../src/neural/network_mux.cc",
+    "file": "../../src/neural/network_mux.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_mux.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_random.cc.o -MF liblc0_lib.so.p/src_neural_network_random.cc.o.d -o liblc0_lib.so.p/src_neural_network_random.cc.o -c ../../src/neural/network_random.cc",
+    "file": "../../src/neural/network_random.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_random.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_record.cc.o -MF liblc0_lib.so.p/src_neural_network_record.cc.o.d -o liblc0_lib.so.p/src_neural_network_record.cc.o -c ../../src/neural/network_record.cc",
+    "file": "../../src/neural/network_record.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_record.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_network_rr.cc.o -MF liblc0_lib.so.p/src_neural_network_rr.cc.o.d -o liblc0_lib.so.p/src_neural_network_rr.cc.o -c ../../src/neural/network_rr.cc",
+    "file": "../../src/neural/network_rr.cc",
+    "output": "liblc0_lib.so.p/src_neural_network_rr.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_reader.cc.o -MF liblc0_lib.so.p/src_neural_reader.cc.o.d -o liblc0_lib.so.p/src_neural_reader.cc.o -c ../../src/neural/reader.cc",
+    "file": "../../src/neural/reader.cc",
+    "output": "liblc0_lib.so.p/src_neural_reader.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_onnx_adapters.cc.o -MF liblc0_lib.so.p/src_neural_onnx_adapters.cc.o.d -o liblc0_lib.so.p/src_neural_onnx_adapters.cc.o -c ../../src/neural/onnx/adapters.cc",
+    "file": "../../src/neural/onnx/adapters.cc",
+    "output": "liblc0_lib.so.p/src_neural_onnx_adapters.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_onnx_builder.cc.o -MF liblc0_lib.so.p/src_neural_onnx_builder.cc.o.d -o liblc0_lib.so.p/src_neural_onnx_builder.cc.o -c ../../src/neural/onnx/builder.cc",
+    "file": "../../src/neural/onnx/builder.cc",
+    "output": "liblc0_lib.so.p/src_neural_onnx_builder.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_onnx_converter.cc.o -MF liblc0_lib.so.p/src_neural_onnx_converter.cc.o.d -o liblc0_lib.so.p/src_neural_onnx_converter.cc.o -c ../../src/neural/onnx/converter.cc",
+    "file": "../../src/neural/onnx/converter.cc",
+    "output": "liblc0_lib.so.p/src_neural_onnx_converter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_writer.cc.o -MF liblc0_lib.so.p/src_neural_writer.cc.o.d -o liblc0_lib.so.p/src_neural_writer.cc.o -c ../../src/neural/writer.cc",
+    "file": "../../src/neural/writer.cc",
+    "output": "liblc0_lib.so.p/src_neural_writer.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_selfplay_game.cc.o -MF liblc0_lib.so.p/src_selfplay_game.cc.o.d -o liblc0_lib.so.p/src_selfplay_game.cc.o -c ../../src/selfplay/game.cc",
+    "file": "../../src/selfplay/game.cc",
+    "output": "liblc0_lib.so.p/src_selfplay_game.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_selfplay_loop.cc.o -MF liblc0_lib.so.p/src_selfplay_loop.cc.o.d -o liblc0_lib.so.p/src_selfplay_loop.cc.o -c ../../src/selfplay/loop.cc",
+    "file": "../../src/selfplay/loop.cc",
+    "output": "liblc0_lib.so.p/src_selfplay_loop.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_selfplay_tournament.cc.o -MF liblc0_lib.so.p/src_selfplay_tournament.cc.o.d -o liblc0_lib.so.p/src_selfplay_tournament.cc.o -c ../../src/selfplay/tournament.cc",
+    "file": "../../src/selfplay/tournament.cc",
+    "output": "liblc0_lib.so.p/src_selfplay_tournament.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_syzygy_syzygy.cc.o -MF liblc0_lib.so.p/src_syzygy_syzygy.cc.o.d -o liblc0_lib.so.p/src_syzygy_syzygy.cc.o -c ../../src/syzygy/syzygy.cc",
+    "file": "../../src/syzygy/syzygy.cc",
+    "output": "liblc0_lib.so.p/src_syzygy_syzygy.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_commandline.cc.o -MF liblc0_lib.so.p/src_utils_commandline.cc.o.d -o liblc0_lib.so.p/src_utils_commandline.cc.o -c ../../src/utils/commandline.cc",
+    "file": "../../src/utils/commandline.cc",
+    "output": "liblc0_lib.so.p/src_utils_commandline.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_configfile.cc.o -MF liblc0_lib.so.p/src_utils_configfile.cc.o.d -o liblc0_lib.so.p/src_utils_configfile.cc.o -c ../../src/utils/configfile.cc",
+    "file": "../../src/utils/configfile.cc",
+    "output": "liblc0_lib.so.p/src_utils_configfile.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_esc_codes.cc.o -MF liblc0_lib.so.p/src_utils_esc_codes.cc.o.d -o liblc0_lib.so.p/src_utils_esc_codes.cc.o -c ../../src/utils/esc_codes.cc",
+    "file": "../../src/utils/esc_codes.cc",
+    "output": "liblc0_lib.so.p/src_utils_esc_codes.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_files.cc.o -MF liblc0_lib.so.p/src_utils_files.cc.o.d -o liblc0_lib.so.p/src_utils_files.cc.o -c ../../src/utils/files.cc",
+    "file": "../../src/utils/files.cc",
+    "output": "liblc0_lib.so.p/src_utils_files.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_histogram.cc.o -MF liblc0_lib.so.p/src_utils_histogram.cc.o.d -o liblc0_lib.so.p/src_utils_histogram.cc.o -c ../../src/utils/histogram.cc",
+    "file": "../../src/utils/histogram.cc",
+    "output": "liblc0_lib.so.p/src_utils_histogram.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_logging.cc.o -MF liblc0_lib.so.p/src_utils_logging.cc.o.d -o liblc0_lib.so.p/src_utils_logging.cc.o -c ../../src/utils/logging.cc",
+    "file": "../../src/utils/logging.cc",
+    "output": "liblc0_lib.so.p/src_utils_logging.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_numa.cc.o -MF liblc0_lib.so.p/src_utils_numa.cc.o.d -o liblc0_lib.so.p/src_utils_numa.cc.o -c ../../src/utils/numa.cc",
+    "file": "../../src/utils/numa.cc",
+    "output": "liblc0_lib.so.p/src_utils_numa.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_optionsdict.cc.o -MF liblc0_lib.so.p/src_utils_optionsdict.cc.o.d -o liblc0_lib.so.p/src_utils_optionsdict.cc.o -c ../../src/utils/optionsdict.cc",
+    "file": "../../src/utils/optionsdict.cc",
+    "output": "liblc0_lib.so.p/src_utils_optionsdict.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_optionsparser.cc.o -MF liblc0_lib.so.p/src_utils_optionsparser.cc.o.d -o liblc0_lib.so.p/src_utils_optionsparser.cc.o -c ../../src/utils/optionsparser.cc",
+    "file": "../../src/utils/optionsparser.cc",
+    "output": "liblc0_lib.so.p/src_utils_optionsparser.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_random.cc.o -MF liblc0_lib.so.p/src_utils_random.cc.o.d -o liblc0_lib.so.p/src_utils_random.cc.o -c ../../src/utils/random.cc",
+    "file": "../../src/utils/random.cc",
+    "output": "liblc0_lib.so.p/src_utils_random.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_string.cc.o -MF liblc0_lib.so.p/src_utils_string.cc.o.d -o liblc0_lib.so.p/src_utils_string.cc.o -c ../../src/utils/string.cc",
+    "file": "../../src/utils/string.cc",
+    "output": "liblc0_lib.so.p/src_utils_string.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_weights_adapter.cc.o -MF liblc0_lib.so.p/src_utils_weights_adapter.cc.o.d -o liblc0_lib.so.p/src_utils_weights_adapter.cc.o -c ../../src/utils/weights_adapter.cc",
+    "file": "../../src/utils/weights_adapter.cc",
+    "output": "liblc0_lib.so.p/src_utils_weights_adapter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_version.cc.o -MF liblc0_lib.so.p/src_version.cc.o.d -o liblc0_lib.so.p/src_version.cc.o -c ../../src/version.cc",
+    "file": "../../src/version.cc",
+    "output": "liblc0_lib.so.p/src_version.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_utils_filesystem.posix.cc.o -MF liblc0_lib.so.p/src_utils_filesystem.posix.cc.o.d -o liblc0_lib.so.p/src_utils_filesystem.posix.cc.o -c ../../src/utils/filesystem.posix.cc",
+    "file": "../../src/utils/filesystem.posix.cc",
+    "output": "liblc0_lib.so.p/src_utils_filesystem.posix.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_blas_convolution1.cc.o -MF liblc0_lib.so.p/src_neural_blas_convolution1.cc.o.d -o liblc0_lib.so.p/src_neural_blas_convolution1.cc.o -c ../../src/neural/blas/convolution1.cc",
+    "file": "../../src/neural/blas/convolution1.cc",
+    "output": "liblc0_lib.so.p/src_neural_blas_convolution1.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_blas_fully_connected_layer.cc.o -MF liblc0_lib.so.p/src_neural_blas_fully_connected_layer.cc.o.d -o liblc0_lib.so.p/src_neural_blas_fully_connected_layer.cc.o -c ../../src/neural/blas/fully_connected_layer.cc",
+    "file": "../../src/neural/blas/fully_connected_layer.cc",
+    "output": "liblc0_lib.so.p/src_neural_blas_fully_connected_layer.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_blas_se_unit.cc.o -MF liblc0_lib.so.p/src_neural_blas_se_unit.cc.o.d -o liblc0_lib.so.p/src_neural_blas_se_unit.cc.o -c ../../src/neural/blas/se_unit.cc",
+    "file": "../../src/neural/blas/se_unit.cc",
+    "output": "liblc0_lib.so.p/src_neural_blas_se_unit.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_blas_network_blas.cc.o -MF liblc0_lib.so.p/src_neural_blas_network_blas.cc.o.d -o liblc0_lib.so.p/src_neural_blas_network_blas.cc.o -c ../../src/neural/blas/network_blas.cc",
+    "file": "../../src/neural/blas/network_blas.cc",
+    "output": "liblc0_lib.so.p/src_neural_blas_network_blas.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_blas_winograd_convolution3.cc.o -MF liblc0_lib.so.p/src_neural_blas_winograd_convolution3.cc.o.d -o liblc0_lib.so.p/src_neural_blas_winograd_convolution3.cc.o -c ../../src/neural/blas/winograd_convolution3.cc",
+    "file": "../../src/neural/blas/winograd_convolution3.cc",
+    "output": "liblc0_lib.so.p/src_neural_blas_winograd_convolution3.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_shared_activation.cc.o -MF liblc0_lib.so.p/src_neural_shared_activation.cc.o.d -o liblc0_lib.so.p/src_neural_shared_activation.cc.o -c ../../src/neural/shared/activation.cc",
+    "file": "../../src/neural/shared/activation.cc",
+    "output": "liblc0_lib.so.p/src_neural_shared_activation.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iliblc0_lib.so.p -I. -I../.. -I../../src -Isubprojects/eigen-3.3.7 -I../../subprojects/eigen-3.3.7 -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -fPIC -pthread -isystem../../third_party -MD -MQ liblc0_lib.so.p/src_neural_shared_winograd_filter.cc.o -MF liblc0_lib.so.p/src_neural_shared_winograd_filter.cc.o.d -o liblc0_lib.so.p/src_neural_shared_winograd_filter.cc.o -c ../../src/neural/shared/winograd_filter.cc",
+    "file": "../../src/neural/shared/winograd_filter.cc",
+    "output": "liblc0_lib.so.p/src_neural_shared_winograd_filter.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ichessboard_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ chessboard_test.p/src_chess_board_test.cc.o -MF chessboard_test.p/src_chess_board_test.cc.o.d -o chessboard_test.p/src_chess_board_test.cc.o -c ../../src/chess/board_test.cc",
+    "file": "../../src/chess/board_test.cc",
+    "output": "chessboard_test.p/src_chess_board_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ihashcat_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ hashcat_test.p/src_utils_hashcat_test.cc.o -MF hashcat_test.p/src_utils_hashcat_test.cc.o.d -o hashcat_test.p/src_utils_hashcat_test.cc.o -c ../../src/utils/hashcat_test.cc",
+    "file": "../../src/utils/hashcat_test.cc",
+    "output": "hashcat_test.p/src_utils_hashcat_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iposition_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ position_test.p/src_chess_position_test.cc.o -MF position_test.p/src_chess_position_test.cc.o.d -o position_test.p/src_chess_position_test.cc.o -c ../../src/chess/position_test.cc",
+    "file": "../../src/chess/position_test.cc",
+    "output": "position_test.p/src_chess_position_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Ioptionsparser_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ optionsparser_test.p/src_utils_optionsparser_test.cc.o -MF optionsparser_test.p/src_utils_optionsparser_test.cc.o.d -o optionsparser_test.p/src_utils_optionsparser_test.cc.o -c ../../src/utils/optionsparser_test.cc",
+    "file": "../../src/utils/optionsparser_test.cc",
+    "output": "optionsparser_test.p/src_utils_optionsparser_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Isyzygy_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ syzygy_test.p/src_syzygy_syzygy_test.cc.o -MF syzygy_test.p/src_syzygy_syzygy_test.cc.o.d -o syzygy_test.p/src_syzygy_syzygy_test.cc.o -c ../../src/syzygy/syzygy_test.cc",
+    "file": "../../src/syzygy/syzygy_test.cc",
+    "output": "syzygy_test.p/src_syzygy_syzygy_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iencoder_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ encoder_test.p/src_neural_encoder_test.cc.o -MF encoder_test.p/src_neural_encoder_test.cc.o.d -o encoder_test.p/src_neural_encoder_test.cc.o -c ../../src/neural/encoder_test.cc",
+    "file": "../../src/neural/encoder_test.cc",
+    "output": "encoder_test.p/src_neural_encoder_test.cc.o"
+  },
+  {
+    "directory": "/home/zblebix/lc0/build/release",
+    "command": "c++ -Iencoder_test.p -I. -I../.. -I../../src -flto=auto -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -O3 -march=native -DUSE_OPENBLAS -DUSE_BLAS -DNO_PEXT -pthread -isystem../../third_party -MD -MQ encoder_test.p/src_utils_protomessage.cc.o -MF encoder_test.p/src_utils_protomessage.cc.o.d -o encoder_test.p/src_utils_protomessage.cc.o -c ../../src/utils/protomessage.cc",
+    "file": "../../src/utils/protomessage.cc",
+    "output": "encoder_test.p/src_utils_protomessage.cc.o"
+  }
+]
