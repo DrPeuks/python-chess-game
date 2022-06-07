@@ -294,6 +294,7 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
 
     for line in iter(p.stdout.readline, ''):
+   
     
         line = line.strip()
 
@@ -327,7 +328,7 @@ def main():
     # Instead of a non-friendly command-line interface for noobs :D
 
     popupWindow = Tk()
-    popupWindow.title("Blob Chess!")
+    popupWindow.title("Blob Chess! Game setup")
 
 
     maia_lvllist = ['1100', '1500', '1900']
@@ -523,6 +524,9 @@ def main():
 
     pygame.init()
     screen = pygame.display.set_mode((WIDTH+MOVELOG_WIDTH, HEIGHT+50))
+    pygame.display.set_caption("Blob Chess!")
+    display_icon = pygame.image.load("images/horsey.jpeg")
+    pygame.display.set_icon(display_icon)
     gs = GameState()
     clock = pygame.time.Clock()
     screen.fill(pygame.Color("white"))
