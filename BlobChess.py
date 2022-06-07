@@ -236,7 +236,7 @@ stockfish_levels = [  # each list corresponding to the level contains skill leve
 ]
 
 if platform.system() == "win32":
-    path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-largeboard_win64.exe"
+    path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-largeboard_x86-64.exe"
     lc0_path = "lc0-windows/lc0.exe"
     path_to_maia = "lc0/windows/"
 elif platform.system() == "Linux":
