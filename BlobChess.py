@@ -450,13 +450,21 @@ def main():
         enable_NNUE = True
         if platform.system() == "win32":
             try:
-                stockfish_executable_windows = glob.glob('stockfish-windows/*.exe')[0]
+                stockfish_executable_windows = glob.glob('stockfish-windows/*.exe')
+                _sew = ""
+                c = False
+                for l in stockfish_executable_windows[0]:
+                    if l == "\\":
+                        if not c:
+                            s += "/"
+                    else:
+                        s += l
             except:
                 print("No Stockfish executable file for Windows found in BlobChess/stockfish-windows. Aborting.")
                 running = False
                 os._exit(1)
             
-            analysisEngine = stockfish.Stockfish(f"stockfish-windows/{stockfish_executable_windows}")
+            analysisEngine = stockfish.Stockfish(_sew)
         elif platform.system() == "Linux":
             analysisEngine = stockfish.Stockfish("stockfish-linux/src/stockfish")
     else:
