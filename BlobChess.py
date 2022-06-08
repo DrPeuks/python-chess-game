@@ -377,7 +377,7 @@ def main():
     Radiobutton(blackPlayer_choiceFrame, text="1900", variable=blackPlayer_maiaELO, value=2).grid(row=3, column=4)
 
 
-    goButton = Button(popupWindow, text="go", command=popupWindow.destroy).grid(row=3, column=0)
+    goButton = Button(popupWindow, text="Play!", command=popupWindow.destroy).grid(row=3, column=0)
 
 
     useNNUE_eval = IntVar(value=1)
