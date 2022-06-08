@@ -63,6 +63,21 @@ Make sure that the paths are respected otherwise the program won't be able to lo
 
 
 
+## Windows
+
+For Windows, you don't really have to compile Stockfish and Lc0 by yourself, you can just download them :
+https://stockfishchess.org/download/
+Then unzip the downloaded file, and then move the executable file to BlobChess/stockfish-windows/
+The path to Stockfish should then look like ```BlobChess/stockfish-windows/stockfish-something-x-x.exe```
+
+For Lc0, you can download the Windows package at https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2, the one I recommend for CPU users is https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2
+
+Then extract the content of the zip file to ```BlobChess/lc0-windows/```. The path to Lc0 should then look like ```BlobChess/lc0-windows/lc0.exe```
+
+
+
+
+
 To run this program, Python 3.x with pip needs to be installed on your machine (Linux or Windows as I did not integrate the Mac OS stockfish/fairy-stockfish/lc0 binaries yet) along with the Python modules PyGame, Chess, Stockfish and Tkinter.
 To install them:
 Linux:
