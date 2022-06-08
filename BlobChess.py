@@ -236,7 +236,7 @@ stockfish_levels = [  # each list corresponding to the level contains skill leve
     [20, 20, 700]
 ]
 
-if platform.system() == "win32":
+if platform.system() == "Windows":
     path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-largeboard_x86-64.exe"
     lc0_path = "lc0-windows/lc0.exe"
 elif platform.system() == "Linux":
@@ -456,7 +456,7 @@ def main():
                 running = False
                 os._exit(1)
             
-            analysisEngine = stockfish.Stockfish(stockfish_executable_windows)
+            analysisEngine = stockfish.Stockfish(f"stockfish-windows/{stockfish_executable_windows}")
         elif platform.system() == "Linux":
             analysisEngine = stockfish.Stockfish("stockfish-linux/src/stockfish")
     else:
