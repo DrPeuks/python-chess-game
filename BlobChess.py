@@ -3,6 +3,7 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide" # hide pygame welcome message 
 
 import chess
 import chess.engine
+import glob
 import platform
 import pygame
 from random import randint
@@ -238,11 +239,9 @@ stockfish_levels = [  # each list corresponding to the level contains skill leve
 if platform.system() == "win32":
     path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-largeboard_x86-64.exe"
     lc0_path = "lc0-windows/lc0.exe"
-    path_to_maia = "lc0/windows/"
 elif platform.system() == "Linux":
     path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-linux-x86_64"
     lc0_path = "lc0-linux/build/release/lc0"
-    path_to_maia = "lc0-linux/build/release/"
 
 
 whitePlayerImage = pygame.transform.scale(pygame.image.load("images/whitePlayer.png"), (20, 20))
@@ -285,9 +284,9 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
 
     if wtm:
-        p = subprocess.Popen([path_to_lc0, f"--weights={path_to_maia}/maia-{eloList[0]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
+        p = subprocess.Popen([path_to_lc0, f"--weights=MaiaWeights/maia-{eloList[0]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
     else:
-        p = subprocess.Popen([path_to_lc0, f"--weights={path_to_maia}/maia-{eloList[1]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
+        p = subprocess.Popen([path_to_lc0, f"--weights=MaiaWeights/maia-{eloList[1]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
 
     lc0_command(p, "position startpos moves {}".format(mvList))
     lc0_command(p, "go nodes 1")
@@ -446,12 +445,20 @@ def main():
     _useNNUE = useNNUE_eval.get()
     enable_NNUE = False
 
+    stockfish_executable_windows = None
     if _useNNUE == 1:
         enable_NNUE = True
         if platform.system() == "win32":
-            analysisEngine = stockfish.Stockfish("stockfish/stockfish_14.1.exe")
+            try:
+                stockfish_executable_windows = glob.glob('stockfish-windows/*.exe')[0]
+            except:
+                print("No Stockfish executable file for Windows found in BlobChess/stockfish-windows. Aborting.")
+                running = False
+                os._exit(1)
+            
+            analysisEngine = stockfish.Stockfish(stockfish_executable_windows)
         elif platform.system() == "Linux":
-            analysisEngine = stockfish.Stockfish("stockfish/stockfish-linux-x86_64")
+            analysisEngine = stockfish.Stockfish("stockfish-linux/src/stockfish")
     else:
         enable_NNUE = False
     
