@@ -69,6 +69,7 @@ For Windows, you don't really have to compile Stockfish and Lc0 by yourself, you
 https://stockfishchess.org/download/
 Then unzip the downloaded file, and then move the executable file to BlobChess/stockfish-windows/
 The path to Stockfish should then look like ```BlobChess/stockfish-windows/stockfish-something-x-x.exe```
+Also make sure that there is only one executable file in BlobChess/stockfish-windows/ because the program will use the first executable file found in that directory.
 
 For Lc0, you can download the Windows package at https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2, the one I recommend for CPU users is https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2
 
