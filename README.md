@@ -6,7 +6,7 @@ First of all, I would like to thank:
   The Stockfish developers:
     https://stockfishchess.org/
     https://github.com/official-stockfish/Stockfish
-    
+
   The Fairy Stockfish developers:
     https://github.com/ianfab/Fairy-Stockfish
 
@@ -31,7 +31,7 @@ First of all, I would like to thank:
 
 
 
-Instead of playing against the Stockfish or whatever, you can also create a game with the Fairy-stockfish level 6 as White and Maia 1900 as Black! This kind of setup can prove instructive or fun to watch. The random move generator against itself is particularly funny!
+Instead of playing against the Stockfish or whatever, you can also create a game with the Fairy-stockfish level 6 as White and Maia 1900 as Black! This kind of setup can prove instructive or fun to watch. The random move generator against itself is particularly funny! For example, one lucky day I watched a game with the random move generator playing against itself, and the game was drawn because of the most common stalemate among beginners : the one that is caused by a king and a queen that block a lonely king. Delightful!
 
 
 
