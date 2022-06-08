@@ -45,7 +45,7 @@ You need to compile the Stockfish and Lc0 as the Fairy-stockfish is already prov
 Stockfish :
 
 https://github.com/official-stockfish/Stockfish
-Once the repo is cloned, navigate to Stockfish/src/ and run the following command to build : ```make net && make help && make-build ARCH=[your_architecture]``` and replace [your_architecture] by for example x86_64 for common Linux computers or armv7 for a Raspberry Pi.
+Once the repo is cloned, navigate to Stockfish/src/ and run the following command to build : ```make net && make help && make build ARCH=[your_architecture]``` and replace [your_architecture] by for example x86_64-modern for common Linux computers or armv7 for a Raspberry Pi.
 
 Then move the content of Stockfish to BlobChess/stockfish-linux/.
 
