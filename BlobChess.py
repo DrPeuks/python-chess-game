@@ -482,7 +482,6 @@ def main():
         _l = whiteStockfishLevel - 1
         whiteEngine.configure(
             {
-                "Skill Level": stockfish_levels[_l][0],
                 "UCI_LimitStrength": True,
                 "UCI_Elo": stockfish_levels[_l][3],
                 "Use NNUE": False
@@ -495,7 +494,7 @@ def main():
         _l = blackStockfishLevel - 1
         blackEngine.configure(
             {
-                "Skill Level": stockfish_levels[_l][0],
+
                 "UCI_LimitStrength": True,
                 "UCI_Elo": stockfish_levels[_l][3],
                 "Use NNUE": False
