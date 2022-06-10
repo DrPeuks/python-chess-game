@@ -225,15 +225,15 @@ Stockfish settings
 
 stockfish_levels = [  # each list corresponding to the level contains skill level (1~20), depth and time for each move in milliseconds
   # [skillLevel, depth, time(ms), elo rating]
-    [3, 1, 50, 500],
-    [6, 2, 100, 800],
-    [9, 3, 150, 1100],
-    [11, 4, 200, 1400],
-    [14, 6, 250, 1700],
-    [17, 8, 300, 1900],
-    [20, 10, 350, 2100],
-    [20, 12, 400, 2250],
-    [20, 20, 700]
+    [-9, 5, 50, 500],
+    [-5, 5, 100, 800],
+    [-1, 5, 150, 1100],
+    [3, 5, 200, 1400],
+    [7, 5, 250, 1700],
+    [11, 8, 300, 1900],
+    [16, 13, 350, 2100],
+    [20, 20, 400, 2250],
+    [20, 22, 700, 2600]
 ]
 
 if platform.system() == "Windows":
@@ -457,6 +457,7 @@ def main():
                     if l == "\\":
                         if not c:
                             s += "/"
+                            c = True
                     else:
                         s += l
             except:
@@ -482,8 +483,7 @@ def main():
         _l = whiteStockfishLevel - 1
         whiteEngine.configure(
             {
-                "UCI_LimitStrength": True,
-                "UCI_Elo": stockfish_levels[_l][3],
+                "Skill Level": stockfish_levels[_l][0],
                 "Use NNUE": False
             }
         )
@@ -494,9 +494,7 @@ def main():
         _l = blackStockfishLevel - 1
         blackEngine.configure(
             {
-
-                "UCI_LimitStrength": True,
-                "UCI_Elo": stockfish_levels[_l][3],
+                "Skill Level": stockfish_levels[_l][0],
                 "Use NNUE": False
             }
         )
