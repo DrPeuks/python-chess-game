@@ -7,7 +7,7 @@ First of all, I would like to thank:
     https://stockfishchess.org/
     https://github.com/official-stockfish/Stockfish
 
-  The Fairy Stockfish developers:
+  The Fairy Stockfish developer:
     https://github.com/ianfab/Fairy-Stockfish
 
   The Maia developers:
