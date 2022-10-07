@@ -17,8 +17,11 @@ First of all, I would like to thank:
   Lichess for information about the Fairy-stockfish settings to make different levels:
     https:/lichess.org
 
-  And the Leela Chess Zero developers:
+  the Leela Chess Zero developers:
     https://github.com/LeelaChessZero/lc0
+    
+  Lichess for their API (and of course their amazing app):
+    https://lichess.org
 
   And special thanks to @reidmcy for his support on creating this first repository which is my first one, and his technical help for Maia!
 
@@ -40,7 +43,7 @@ Instead of playing against the Stockfish or whatever, you can also create a game
 
 ## Linux
 
-You need to compile the Stockfish and Lc0 as the Fairy-stockfish is already provided.
+You need to compile the Stockfish.
 
 Stockfish :
 
@@ -49,34 +52,39 @@ Once the repo is cloned, navigate to Stockfish/src/ and run the following comman
 
 Then move the content of Stockfish to BlobChess/stockfish-linux/.
 
-Then the path to Stockfish should be ```BlobChess/stockfish-linux/src/stockfish```.
+Then the path to Stockfish should be ```BlobChess/stockfish/src/stockfish``` but at line 170 you will have to edit the stockfish_path variable.
 
 
 Lc0:
 
 https://github.com/LeelaChessZero/lc0#building-and-running-lc0
 
-Once you have completed the building instructions, move the content of ```lc0/``` to BlobChess/lc0-linux. Then, the path to Lc0 should be ```BlobChess/lc0-linux/build/release/lc0```
+Once you have completed the building instructions, move the content of ```lc0/``` to BlobChess/lc0-linux. Then, the path to Lc0 should be ```BlobChess/lc0-linux/build/release/lc0``` and then again at line 170, edit lc0_path.
 
 
 Make sure that the paths are respected otherwise the program won't be able to load the engines, at least if you don't edit the code. You could create custom paths.
 
 
+Fairy Stockfish
+
+Download the Fairy Stockfish executable from https://github.com/ianfab/Fairy-Stockfish and place it in BlobChess/fairy-stockfish. Edit fairy_stockfish_path at line 170.
 
 ## Windows
 
 For Windows, you don't really have to compile Stockfish and Lc0 by yourself, you can just download them :
 https://stockfishchess.org/download/
 Then unzip the downloaded file, and then move the executable file to BlobChess/stockfish-windows/
-The path to Stockfish should then look like ```BlobChess/stockfish-windows/stockfish-something-x-x.exe```
+The path to Stockfish should then look like ```BlobChess/stockfish/stockfish-something-x-x.exe``` and edit stockfish_path variable.
 Also make sure that there is only one executable file in BlobChess/stockfish-windows/ because the program will use the first executable file found in that directory.
 
 For Lc0, you can download the Windows package at https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2, the one I recommend for CPU users is https://github.com/LeelaChessZero/lc0/releases/tag/v0.28.2
 
-Then extract the content of the zip file to ```BlobChess/lc0-windows/```. The path to Lc0 should then look like ```BlobChess/lc0-windows/lc0.exe```
+Then extract the content of the zip file to ```BlobChess/lc0/```. The path to Lc0 should then look like ```BlobChess/lc0/lc0.exe```
 
 
+Fairy Stockfish
 
+Same as for Linux, download the executable, place it in BlobChess/fairy-stockfish/ and edit fairy_stockfish_path.
 
 
 To run this program, Python 3.x with pip needs to be installed on your machine (Linux or Windows as I did not integrate the Mac OS stockfish/fairy-stockfish/lc0 binaries yet) along with the Python modules PyGame, Chess, Stockfish and Tkinter.
