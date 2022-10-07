@@ -14,33 +14,33 @@ from tkinter import *
 from tkinter import messagebox
 
 
+from openingExplorer import get_opening_move
 
 
 
 
 
 
+'''
+BBBBBBBBBBBBBBBBB   lllllll                 b::::::b                    CCCCCCCCCCCCChhhhhhh
+B::::::::::::::::B  l:::::l                 b::::::b                 CCC::::::::::::Ch:::::h
+B::::::BBBBBB:::::B l:::::l                 b::::::b               CC:::::::::::::::Ch:::::h
+BB:::::B     B:::::Bl:::::l                  b:::::b              C:::::CCCCCCCC::::Ch:::::h
+  B::::B     B:::::B l::::l    ooooooooooo   b:::::bbbbbbbbb     C:::::C       CCCCCC h::::h hhhhh           eeeeeeeeeeee        ssssssssss       ssssssssss
+  B::::B     B:::::B l::::l  oo:::::::::::oo b::::::::::::::bb  C:::::C               h::::hh:::::hhh      ee::::::::::::ee    ss::::::::::s    ss::::::::::s
+  B::::BBBBBB:::::B  l::::l o:::::::::::::::ob::::::::::::::::b C:::::C               h::::::::::::::hh   e::::::eeeee:::::eess:::::::::::::s ss:::::::::::::s
+  B:::::::::::::BB   l::::l o:::::ooooo:::::ob:::::bbbbb:::::::bC:::::C               h:::::::hhh::::::h e::::::e     e:::::es::::::ssss:::::ss::::::ssss:::::s
+  B::::BBBBBB:::::B  l::::l o::::o     o::::ob:::::b    b::::::bC:::::C               h::::::h   h::::::he:::::::eeeee::::::e s:::::s  ssssss  s:::::s  ssssss
+  B::::B     B:::::B l::::l o::::o     o::::ob:::::b     b:::::bC:::::C               h:::::h     h:::::he:::::::::::::::::e    s::::::s         s::::::s
+  B::::B     B:::::B l::::l o::::o     o::::ob:::::b     b:::::bC:::::C               h:::::h     h:::::he::::::eeeeeeeeeee        s::::::s         s::::::s
+  B::::B     B:::::B l::::l o::::o     o::::ob:::::b     b:::::b C:::::C       CCCCCC h:::::h     h:::::he:::::::e           ssssss   s:::::s ssssss   s:::::s
+BB:::::BBBBBB::::::Bl::::::lo:::::ooooo:::::ob:::::bbbbbb::::::b  C:::::CCCCCCCC::::C h:::::h     h:::::he::::::::e          s:::::ssss::::::ss:::::ssss::::::s
+B:::::::::::::::::B l::::::lo:::::::::::::::ob::::::::::::::::b    CC:::::::::::::::C h:::::h     h:::::h e::::::::eeeeeeee  s::::::::::::::s s::::::::::::::s
+B::::::::::::::::B  l::::::l oo:::::::::::oo b:::::::::::::::b       CCC::::::::::::C h:::::h     h:::::h  ee:::::::::::::e   s:::::::::::ss   s:::::::::::ss
+BBBBBBBBBBBBBBBBB   llllllll   ooooooooooo   bbbbbbbbbbbbbbbb           CCCCCCCCCCCCC hhhhhhh     hhhhhhh    eeeeeeeeeeeeee    sssssssssss      sssssssssss
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''
 
 
 
@@ -167,10 +167,13 @@ class Move:
 
 
 
+# edit these lines if you are using custom paths
 
 
-
-
+stockfish_path = "./stockfish/stockfish.exe"
+fairy_stockfish_path = "./fairy-stockfish/fairy-stockfish.exe"
+lc0_path = "./lc0/lc0.exe"
+maia_path = "./MaiaWeights/"
 
 
 
@@ -195,9 +198,6 @@ POLICE = pygame.font.SysFont("Consolas", 32)
 gameOver = False
 winList = []
 winner = ""
-lc0_path = ""
-path_to_fairyStockfish = ""
-path_to_maia = ""
 
 stockfishLevel = 0
 playersNamesTexts = []
@@ -217,6 +217,16 @@ rowToY =  {"8": 0, "7": 1, "6": 2, "5": 3, "4": 4, "3": 5, "2": 6, "1": 7}
 
 
 
+openingBookList = [
+    'opening-books/bookfish_opening_seqs_2.txt',
+    'opening-books/bookfish_opening_seqs_4.txt',
+    'opening-books/bookfish_opening_seqs_6.txt',
+    'opening-books/bookfish_opening_seqs_8.txt',
+    'opening-books/bookfish_opening_seqs_10.txt',
+    'opening-books/bookfish_opening_seqs_12.txt'
+]
+
+openingBooks_ranges = [21, 122, 438, 1205, 2394, 4538]
 
 '''
 Stockfish settings
@@ -224,24 +234,20 @@ Stockfish settings
 
 
 stockfish_levels = [  # each list corresponding to the level contains skill level (1~20), depth and time for each move in milliseconds
-  # [skillLevel, depth, time(ms), elo rating]
-    [-9, 5, 50, 500],
-    [-5, 5, 100, 800],
-    [-1, 5, 150, 1100],
-    [3, 5, 200, 1400],
-    [7, 5, 250, 1700],
-    [11, 8, 300, 1900],
-    [16, 13, 350, 2100],
-    [20, 20, 400, 2250],
-    [20, 22, 700, 2600]
+  # [skillLevel, depth, time(ms), opening book index]
+    [-9, 5, 50, 0],
+    [-5, 5, 100, 0],
+    [-1, 5, 150, 1],
+    [3, 5, 200, 2],
+    [7, 5, 250, 3],
+    [11, 8, 300, 4],
+    [16, 13, 350, 4],
+    [20, 20, 400, 5],
+    [20, 22, 700, 5] # extra level that does not play lol
 ]
 
-if platform.system() == "Windows":
-    path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-largeboard_x86-64.exe"
-    lc0_path = "lc0-windows/lc0.exe"
-elif platform.system() == "Linux":
-    path_to_fairyStockfish = "fairy-stockfish/fairy-stockfish-linux-x86_64"
-    lc0_path = "lc0-linux/build/release/lc0"
+
+
 
 
 whitePlayerImage = pygame.transform.scale(pygame.image.load("images/whitePlayer.png"), (20, 20))
@@ -284,17 +290,17 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
 
     if wtm:
-        p = subprocess.Popen([path_to_lc0, f"--weights=MaiaWeights/maia-{eloList[0]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
+        p = subprocess.Popen([lc0_path, "--weights="+maia_path+f"/maia-{eloList[0]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
     else:
-        p = subprocess.Popen([path_to_lc0, f"--weights=MaiaWeights/maia-{eloList[1]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
+        p = subprocess.Popen([lc0_path, "--weights="+maia_path+f"/maia-{eloList[1]}.pb.gz"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=0, text=True)
 
     lc0_command(p, "position startpos moves {}".format(mvList))
     lc0_command(p, "go nodes 1")
 
 
     for line in iter(p.stdout.readline, ''):
-   
-        
+
+
         line = line.strip()
 
         if line.startswith("bestmove"):
@@ -302,7 +308,7 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
             bestMove = line.split()[1].strip()
             break
 
-    
+
     lc0_command(p, "quit")
 
     # Make sure process p is terminated, if not lets try to close it again
@@ -314,7 +320,31 @@ def lc0_gestBestMove(path_to_lc0, _mvList, wtm, eloList):
 
 
     return bestMove
-    
+
+
+
+def getOpening(mvLog, file):
+
+    with open(file) as _file:
+
+        candidateOpenings = []
+
+
+        for line in _file:
+            finalOpening = ''
+            _opening = line.split()
+            _opening.pop(0)
+            for move in _opening:
+                finalOpening += move + ' '
+            if finalOpening.startswith(mvLog):
+                candidateOpenings.append(finalOpening)
+
+
+
+        index = randint(0, len(candidateOpenings)-1)
+
+        print(candidateOpenings[index])
+        return candidateOpenings[index]
 
 
 
@@ -331,6 +361,7 @@ def main():
 
 
     maia_lvllist = ['1100', '1500', '1900']
+    maia_lvlob   = {'1100': 1, '1500': 2, '1900': 4} # opening books used by each level
 
 
     whitePlayer_intvar = IntVar()
@@ -339,6 +370,9 @@ def main():
     whitePlayer_lvlIntVar = IntVar()
     whitePlayer_nameTextVar = StringVar()
     whitePlayer_maiaELO = IntVar()
+
+    stockfish_whiteOpeningIndex = 0
+    stockfish_blackOpeningIndex = 0
 
 
     Radiobutton(whitePlayer_choiceFrame, text='User (you)', variable=whitePlayer_intvar, value=0).grid(row=0, column=0)
@@ -400,6 +434,14 @@ def main():
     maia_whiteElo = ""
     maia_blackElo = ""
 
+
+    players_ob = []
+
+    openingBook_move_index = 0 # index that the engines will use to know which
+                               # move from the books they need to play
+                               # this number will increment of +1 each time a move is played
+
+
     # Configure the players
 
     if whitePlayerChoice_ == 0:
@@ -408,7 +450,7 @@ def main():
         _whitePlayer = whitePlayerName
     elif whitePlayerChoice_ == 1:
         whitePlayer = "Stockfish"
-        whiteEngine = chess.engine.SimpleEngine.popen_uci(path_to_fairyStockfish)
+        whiteEngine = chess.engine.SimpleEngine.popen_uci(fairy_stockfish_path)
     elif whitePlayerChoice_ == 2:
         whitePlayer= "Random Move AI"
         _whitePlayer = "Random Move"
@@ -417,13 +459,16 @@ def main():
         maia_whiteElo = maia_lvllist[whitePlayer_maiaELO.get()]
         _whitePlayer = f"Maia {maia_whiteElo}"
 
+
+
+
     if blackPlayerChoice_ == 0:
         blackPlayerName = str(blackPlayer_nameTextVar.get())
         blackPlayer = "User"
         _blackPlayer = blackPlayerName
     elif blackPlayerChoice_ == 1:
         blackPlayer = "Stockfish"
-        blackEngine = chess.engine.SimpleEngine.popen_uci(path_to_fairyStockfish)
+        blackEngine = chess.engine.SimpleEngine.popen_uci(fairy_stockfish_path)
     elif blackPlayerChoice_ == 2:
         blackPlayer= "Random Move AI"
         _blackPlayer = "Random Move"
@@ -431,6 +476,8 @@ def main():
         blackPlayer = "Maia Chess"
         maia_blackElo = maia_lvllist[blackPlayer_maiaELO.get()]
         _blackPlayer = f"Maia {maia_blackElo}"
+
+
     else:
         blackPlayer = "Stockfish"
 
@@ -440,37 +487,20 @@ def main():
     blackEngine_depth = 0
     blackEngine_time  = 0
 
-    
+
 
     _useNNUE = useNNUE_eval.get()
     enable_NNUE = False
 
-    stockfish_executable_windows = None
+
     if _useNNUE == 1:
         enable_NNUE = True
-        if platform.system() == "win32":
-            try:
-                stockfish_executable_windows = glob.glob('stockfish-windows/*.exe')
-                _sew = ""
-                c = False
-                for l in stockfish_executable_windows[0]:
-                    if l == "\\":
-                        if not c:
-                            s += "/"
-                            c = True
-                    else:
-                        s += l
-            except:
-                print("No Stockfish executable file for Windows found in BlobChess/stockfish-windows. Aborting.")
-                running = False
-                os._exit(1)
-            
-            analysisEngine = stockfish.Stockfish(_sew)
-        elif platform.system() == "Linux":
-            analysisEngine = stockfish.Stockfish("stockfish-linux/src/stockfish")
+
+        analysisEngine = stockfish.Stockfish(stockfish_path)
+
     else:
         enable_NNUE = False
-    
+
 
 
 
@@ -481,6 +511,7 @@ def main():
     if whitePlayer == "Stockfish":
         whiteStockfishLevel = whitePlayer_lvlIntVar.get()
         _l = whiteStockfishLevel - 1
+        stockfish_whiteOpeningIndex = stockfish_levels[_l][3]
         whiteEngine.configure(
             {
                 "Skill Level": stockfish_levels[_l][0],
@@ -492,6 +523,7 @@ def main():
     if blackPlayer == "Stockfish":
         blackStockfishLevel = blackPlayer_lvlIntVar.get()
         _l = blackStockfishLevel - 1
+        stockfish_blackOpeningIndex = stockfish_levels[_l][3]
         blackEngine.configure(
             {
                 "Skill Level": stockfish_levels[_l][0],
@@ -501,9 +533,12 @@ def main():
         blackEngine_depth = stockfish_levels[_l][1]
 
 
-    
+
     coreBoard = chess.Board()
-    
+
+
+    openingMoveLog = ""
+
 
     squaresToHighlight = []
     destinationSquaresToHighlight = []
@@ -593,7 +628,7 @@ def main():
 
 
         for e in pygame.event.get():
-            
+
             if e.type == pygame.QUIT:
 
                 running = False
@@ -612,7 +647,7 @@ def main():
                     playerClicks.append(sqSelected)
 
                 if len(playerClicks) == 1 and ((whitePlayer == "User" and turn == "w") or (blackPlayer == "User" and turn == "b")) and (not turnPlayed):
-                    
+
                     squareClicked = files[playerClicks[0][1]] + rows[playerClicks[0][0]]
 
                     for m in coreBoard.legal_moves:
@@ -621,16 +656,16 @@ def main():
                         if (m[0]+m[1]) == squareClicked:
 
                             squaresToHighlight = [[playerClicks[0][1], playerClicks[0][0]]]
-                            
+
                             destinationSquaresToHighlight.append([fileToX[m[2]], rowToY[m[3]]])
 
-                            
+
 
 
                 if len(playerClicks) == 3:
 
-                    playerClicks = []    
-                
+                    playerClicks = []
+
 
                 if len(playerClicks) == 2 and ((whitePlayer == "User" and turn == "w") or (blackPlayer == "User" and turn == "b")) and (not turnPlayed):
                     squaresToHighlight = []
@@ -642,6 +677,7 @@ def main():
                             moveLog.append(move.getChessNotation())
                             lc0_moveList.append(move.getChessNotation())
                             coreBoard.push_uci(move.getChessNotation())
+                            openingMoveLog += move.getChessNotation()+ " "
                             drawGameState(screen, gs.board, coreBoard, squaresToHighlight, destinationSquaresToHighlight)
 
                             if enable_NNUE:
@@ -659,6 +695,8 @@ def main():
 
 
                             hasToGen_pml = True
+
+                            openingBook_move_index += 1
 
 
 
@@ -693,6 +731,8 @@ def main():
 
                             moveLog.append(_move)
 
+                            openingMoveLog += _move + " "
+
                             coreBoard.push_uci(_move)
                             drawGameState(screen, gs.board, coreBoard, squaresToHighlight, destinationSquaresToHighlight)
                             lc0_moveList.append(_move)
@@ -712,6 +752,8 @@ def main():
 
                             hasToGen_pml = True
 
+                            openingBook_move_index += 1
+
 
 
 
@@ -723,23 +765,34 @@ def main():
             # keyboard handling
             elif e.type == pygame.KEYDOWN:
                 if e.key == pygame.K_z:
-                    
+
                     moveLog.pop(len(moveLog)-1)
                     coreBoard.pop()
                     moveMade = True
                     if enable_NNUE:
                         analysisEngine.set_fen_position(coreBoard.fen())
 
-            
+
 
 
 
 
         if (whitePlayer == "Stockfish" and turn == "w") and (not turnPlayed):
 
-            result = str(whiteEngine.play(coreBoard, limit=chess.engine.Limit(depth=whiteEngine_depth, time=whiteEngine_time)).move)
+
+            try:
+                #result = getOpening(openingMoveLog, openingBookList[stockfish_whiteOpeningIndex]).split()[openingBook_move_index]
+                _result = get_opening_move(stockfish_whiteOpeningIndex + 1, coreBoard.fen(), whiteToMove)
+                if not _result[0]:
+                    raise ValueError
+                else:
+                    result = _result[1]
+            except ValueError:
+                result = str(whiteEngine.play(coreBoard, limit=chess.engine.Limit(depth=whiteEngine_depth, time=whiteEngine_time)).move)
 
             lc0_moveList.append(result)
+
+            openingMoveLog += result + " "
 
             coreBoard.push(chess.Move.from_uci(result))
             moveLog.append(str(result))
@@ -754,12 +807,27 @@ def main():
                 turn = "b"
 
             hasToGen_pml = True
+
+            openingBook_move_index += 1
+
+
 
         elif (blackPlayer == "Stockfish" and turn == "b") and (not turnPlayed):
 
-            result = str(blackEngine.play(coreBoard, limit=chess.engine.Limit(depth=blackEngine_depth, time=blackEngine_time)).move)
+
+            try:
+                #result = getOpening(openingMoveLog, openingBookList[stockfish_blackOpeningIndex]).split()[openingBook_move_index]
+                _result = get_opening_move(stockfish_blackOpeningIndex+1, coreBoard.fen(), whiteToMove)
+                if not _result[0]:
+                    raise ValueError
+                else:
+                    result = _result[1]
+            except ValueError:
+                result = str(blackEngine.play(coreBoard, limit=chess.engine.Limit(depth=blackEngine_depth, time=blackEngine_time)).move)
 
             lc0_moveList.append(result)
+
+            #openingMoveLog += result + " "
 
             coreBoard.push(chess.Move.from_uci(result))
             moveLog.append(str(result))
@@ -774,6 +842,8 @@ def main():
                 turn = "b"
 
             hasToGen_pml = True
+
+            openingBook_move_index += 1
 
 
         if (whitePlayer == "Random Move AI" and whiteToMove) or (blackPlayer == "Random Move AI" and not whiteToMove) and (not turnPlayed):
@@ -781,6 +851,8 @@ def main():
             result = validMoves[randint(0, len(validMoves))-1]
 
             lc0_moveList.append(result)
+
+            #openingMoveLog += result + " "
 
             if result != "0":
                 coreBoard.push(chess.Move.from_uci(str(result)))
@@ -796,14 +868,65 @@ def main():
 
             hasToGen_pml = True
 
+            openingBook_move_index += 1
+
 
 
         if (whitePlayer == "Maia Chess" and whiteToMove) or (blackPlayer == "Maia Chess" and not whiteToMove) and not turnPlayed:
 
+            side = 0
 
-            result = lc0_gestBestMove(lc0_path, lc0_moveList, whiteToMove, [maia_whiteElo, maia_blackElo]).__str__()
+            if blackPlayer == "Maia Chess" and not whiteToMove:
+                if len(players_ob) == 2:
+                    side = 1
+
+
+            result = ""
+
+            if whiteToMove:
+                try:
+                    #result = getOpening(openingMoveLog, openingBookList[maia_lvlob[maia_whiteElo]]).split()[openingBook_move_index]
+                    lvl = 1
+                    if maia_whiteElo == "1100":
+                        pass
+                    elif maia_whiteElo == "1500":
+                        lvl = 3
+                    else:
+                        lvl = 6
+
+                    _result = get_opening_move(lvl, coreBoard.fen(), whiteToMove)
+                    if not _result[0]:
+                        raise ValueError
+                    else:
+                        result = _result[1]
+
+                except ValueError:
+                    result = lc0_gestBestMove('lc0/build/release/lc0', lc0_moveList, whiteToMove, [maia_whiteElo, maia_blackElo]).__str__()
+            else:
+                try:
+                    #result = getOpening(openingMoveLog, openingBookList[maia_lvlob[maia_blackElo]]).split()[openingBook_move_index]
+                    lvl = 1
+                    if maia_blackElo == "1100":
+                        pass
+                    elif maia_blackElo == "1500":
+                        lvl = 3
+                    else:
+                        lvl = 6
+
+                    _result = get_opening_move(lvl, coreBoard.fen(), whiteToMove)
+                    if not _result[0]:
+                        raise ValueError
+                    else:
+                        result = _result[1]
+
+                except ValueError:
+                    result = lc0_gestBestMove('lc0/build/release/lc0', lc0_moveList, whiteToMove, [maia_whiteElo, maia_blackElo]).__str__()
+
+
 
             lc0_moveList.append(result)
+
+            openingMoveLog += result + " "
 
             coreBoard.push(chess.Move.from_uci(result))
             moveLog.append(result)
@@ -815,6 +938,11 @@ def main():
                 analysisEngine.set_fen_position(coreBoard.fen())
 
             hasToGen_pml = True
+
+            openingBook_move_index += 1
+
+
+
 
 
 
@@ -846,12 +974,12 @@ def main():
             else:
                 winner = "Black"
                 winList = [0, 1]
-            
+
             endText_render = True
 
             running = False
             gameOver = True
-            
+
         elif coreBoard.is_stalemate():
             running = False
             gameOver = True
@@ -868,7 +996,7 @@ def main():
 
 
 
-        
+
         b.set_fen("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
         completeMoveLog = b.variation_san([chess.Move.from_uci(m) for m in moveLog])
 
@@ -914,7 +1042,7 @@ def main():
 
 
         if endText_render:
-            
+
             endText = POLICE.render("Checkmate!", 1, (0, 255, 0))
             screen.blit(endText, (SQ_SIZE*8+80, 0))
             if coreBoard.outcome().winner:
@@ -985,15 +1113,15 @@ def main():
                 ent.configure(state="disabled")
                 ent.configure(inactiveselectbackground=ent.cget("selectbackground"))
                 root.mainloop()
-        
-        
-        
-        
+
+
+
+
 
 
         pygame.display.update()
 
-        
+
 
 
 
@@ -1088,15 +1216,18 @@ if __name__ == "__main__":
     main()
     pygame.init()
     _quit=False
-        
+
 
     while True:
-        pygame.display.update() 
+        pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 _quit=True
         if _quit:
             break
-        
+
 os._exit(0)
+
+
+# wow you reached the end! thanks for having read the code :D
