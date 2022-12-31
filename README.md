@@ -21,7 +21,7 @@ First of all, I would like to thank:
     https://github.com/LeelaChessZero/lc0
     
   Lichess for their API (and of course their amazing app):
-    https://lichess.org
+    https://lichess.org/api
 
   And special thanks to @reidmcy for his support on creating this first repository which is my first one, and his technical help for Maia!
 
