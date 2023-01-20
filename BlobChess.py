@@ -15,7 +15,7 @@ from tkinter import *
 from tkinter import messagebox
 
 
-from lichessPlay import PlayGame, lichessGame
+from lichessPlay import PlayGame, LichessGame
 from openingExplorer import get_opening_move
 
 
@@ -579,13 +579,13 @@ def main():
 	# create the online game if needed
 	if white_playOnline or black_playOnline:
 		if whitePlayer == 'Stockfish' and white_playOnline:
-			game = lichessGame(target='ai', white=['Stockfish', whiteStockfishLevel], black=['User'])
+			game = LichessGame(target='ai', white=['Stockfish', whiteStockfishLevel], black=['User'])
 		elif blackPlayer == 'Stockfish' and black_playOnline:
-			game = lichessGame(target='ai', white=['User'], black=['Stockfish', blackStockfishLevel])
+			game = LichessGame(target='ai', white=['User'], black=['Stockfish', blackStockfishLevel])
 		elif blackPlayer == 'Maia Chess' and black_playOnline:
-			game = lichessGame(target='player', white=['User'], black=['Maia Chess', maia_blackElo])
+			game = LichessGame(target='player', white=['User'], black=['Maia Chess', maia_blackElo])
 		elif whitePlayer == 'Maia Chess' and white_playOnline:
-			game = lichessGame(target='player', white=['Maia Chess', maia_whiteElo], black=['User'])
+			game = LichessGame(target='player', white=['Maia Chess', maia_whiteElo], black=['User'])
 
 
 
