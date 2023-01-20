@@ -1,6 +1,7 @@
 # BlobChess
 A chess game written in Python based on python-chess and PyGame with which you can play against the Fairy Stockfish, a random move generator and Maia Chess. The Stockfish 14 NNUE evaluation is also available. 
-I'm using the Lichess API for the opening explorer. 
+I'm using the Lichess API for the opening explorer, and to let you play online against the Fairy Stockfish on Lichess (because it will play better openings) and the bots maia1, maia5 and maia9 on Lichess, still because of the openings. But in order to play online, you will have to create yourself a token to use the Lichess API here: https://lichess.org/account/oauth/token/create?scopes[]=challenge:read&scopes[]=challenge:write&scopes[]=board:play&description=Play+on+Lichess+from+BlobChess (the required scopes are prefilled)
+
 First of all, I would like to thank:
 
   The Stockfish developers:
@@ -34,7 +35,8 @@ First of all, I would like to thank:
 
 
 
-Instead of playing against the Stockfish or whatever, you can also create a game with the Fairy-stockfish level 6 as White and Maia 1900 as Black! This kind of setup can prove instructive or fun to watch. The random move generator against itself is particularly funny! For example, one lucky day I watched a game with the random move generator playing against itself, and the game was drawn because of the most common stalemate among beginners : the one that is caused by a king and a queen that block a lonely king. Delightful!
+Instead of playing against the Stockfish or whatever, you can also create a game with the Fairy-stockfish level 6 as White and Maia 1900 as Black! This kind of setup can prove instructive or fun to watch. The random move generator against itself is particularly funny! For example, one lucky day I watched a game with the random move generator playing against itself, and the game was drawn because of the most common stalemate among beginners : the one that is caused by a king and a queen that block a lonely king. Delightful! 
+But you can't create a game with both sides playing online. And please, don't cheat on rated games by using the Stockfish otherwise you will get banned!
 
 
 
