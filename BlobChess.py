@@ -1091,15 +1091,9 @@ def main():
 
 
 			try:
-				#result = getOpening(openingMoveLog, openingBookList[stockfish_blackOpeningIndex]).split()[openingBook_move_index]
-				_result = get_opening_move(5, coreBoard.fen(), whiteToMove)
-				if not _result[0]:
-					raise ValueError
-				else:
-					result = _result[1]
-					print('hehe opening ' + result)
-			except ValueError:
-				result = whiteStockfishPlayerEngine.get_best_move()
+                result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
+            except:
+                result = blackStockfishPlayerEngine.get_best_move()
 
 
 
@@ -1134,7 +1128,10 @@ def main():
 		elif (blackPlayer == "Stockfish N" and turn == "b") and (not turnPlayed):
 
 
-			result = blackStockfishPlayerEngine.get_best_move()
+            try:
+                result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
+            except:
+                result = blackStockfishPlayerEngine.get_best_move()
 
 
 			lc0_moveList.append(result)
@@ -1448,3 +1445,5 @@ os._exit(0)
 
 
 # wow you reached the end! thanks for having read the code :D
+
+
