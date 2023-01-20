@@ -62,7 +62,7 @@ class PlayGame(threading.Thread):
 
 
 
-lichessToken = 'lip_m6GhNjPnbtaQGLLpXASq'
+lichessToken = ''
 
 
 class LichessGame:
@@ -107,18 +107,18 @@ class LichessGame:
 
 			if self.white[0] == 'User' and self.black[0] == 'Maia Chess':
 				maiaLevel = int((int(self.black[1]) - 1000) / 100)
-				gameData = json.loads(subprocess.check_output(['curl', '-X', 'POST', '-H', 'Authorization: Bearer lip_m6GhNjPnbtaQGLLpXASq', f'https://lichess.org/api/challenge/maia{maiaLevel}', '-d', 'rated=false&clock.limit=300&clock.increment=3&color=white']))
+				gameData = json.loads(subprocess.check_output(['curl', '-X', 'POST', '-H', f'Authorization: Bearer {lichessToken}', f'https://lichess.org/api/challenge/maia{maiaLevel}', '-d', 'rated=false&clock.limit=300&clock.increment=3&color=white']))
 				print(gameData)
 			elif self.white[0] == 'Maia Chess' and self.black[0] == 'User':
 				maiaLevel = int((int(self.white[1]) - 1000) / 100)
-				gameData = json.loads(subprocess.check_output(['curl', '-X', 'POST', '-H', 'Authorization: Bearer lip_m6GhNjPnbtaQGLLpXASq', 'https://lichess.org/api/challenge/maia{maiaLevel}', '-d', 'rated=false&clock.limit=900&clock.increment=10&color=black']))
+				gameData = json.loads(subprocess.check_output(['curl', '-X', 'POST', '-H', f'Authorization: Bearer {lichessToken}', 'https://lichess.org/api/challenge/maia{maiaLevel}', '-d', 'rated=false&clock.limit=900&clock.increment=10&color=black']))
 				print(gameData)
 
 
 
 			#print(gameData)
 
-			ongoingGames = json.loads(subprocess.check_output(['curl', '-X', 'GET', '-H', 'Authorization: Bearer lip_m6GhNjPnbtaQGLLpXASq', 'https://lichess.org/api/account/playing', '-d', 'nb=1']))
+			ongoingGames = json.loads(subprocess.check_output(['curl', '-X', 'GET', '-H', f'Authorization: Bearer {lichessToken}', 'https://lichess.org/api/account/playing', '-d', 'nb=1']))
 			#print(ongoingGames)
 
 			self.gameId = gameData['challenge']['id']
