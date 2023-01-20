@@ -28,7 +28,7 @@ First of all, I would like to thank:
 
 
 
-![image](https://user-images.githubusercontent.com/89562745/172290954-09011cd7-327b-453d-be29-8bc0292d7aa4.png)
+
 
 
 ![image](https://user-images.githubusercontent.com/89562745/172292165-68dec124-f086-4966-9fb8-b11091face45.png)
