@@ -103,7 +103,7 @@ Windows:
 		`pip install pygame chess stockfish tk`
 
 
-
+## You have to edit lichessToken.txt and put your Lichess token inside it in order to play through the Lichess API.
 
 
 And then you are ready to go :
