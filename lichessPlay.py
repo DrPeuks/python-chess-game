@@ -63,6 +63,10 @@ class PlayGame(threading.Thread):
 
 
 lichessToken = ''
+with open('./lichessToken.txt') as file:
+	for line in file:
+		lichessToken = line
+		break
 
 
 class LichessGame:
