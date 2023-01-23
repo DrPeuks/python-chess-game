@@ -105,6 +105,7 @@ Windows:
 
 
 
+
 And then you are ready to go :
 `python BlobChess.py`
 
