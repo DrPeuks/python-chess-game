@@ -1,10 +1,13 @@
+
+
+# wow! what a messy code, I know...
+
+
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide" # hide pygame welcome message because its annoying :D
 
 import chess
 import chess.engine
-import glob
-import platform
 import pygame
 from random import randint
 import stockfish
@@ -15,7 +18,7 @@ from tkinter import *
 from tkinter import messagebox
 
 
-from lichessPlay import PlayGame, LichessGame
+from lichessPlay import LichessGame
 from openingExplorer import get_opening_move
 
 
@@ -469,7 +472,7 @@ def main():
 		_whitePlayer = f"Maia {maia_whiteElo}"
 	elif whitePlayerChoice_ == 4:
 		whitePlayer = 'Stockfish N'
-		whiteStockfishPlayerEngine = Stockfish(stockfish_path, depth=18)
+		whiteStockfishPlayerEngine = Stockfish(stockfish_path, depth=23)
 		stockfish_plays = True
 
 
@@ -529,6 +532,7 @@ def main():
 
 	enginePlaying = (whitePlayer == "Stockfish") or (blackPlayer == "Stockfish")
 
+	whiteStockfishLevel = whitePlayer_lvlIntVar.get()
 	if whitePlayer == "Stockfish" and not white_playOnline:
 		whiteStockfishLevel = whitePlayer_lvlIntVar.get()
 		_l = whiteStockfishLevel - 1
@@ -874,10 +878,7 @@ def main():
 			moveLog.append(str(result))
 
 			if stockfish_plays:
-				if whiteStockfishPlayerEngine != None:
-					whiteStockfishPlayerEngine.set_fen_position(coreBoard.fen())
-				if blackStockfishPlayerEngine != None:
-					blackStockfishPlayerEngine.set_fen_position(coreBoard.fen())
+				blackStockfishPlayerEngine.set_fen_position(coreBoard.fen())
 
 			if white_playOnline or black_playOnline:
 				game.makeMove(chess.Move.from_uci(result))
@@ -932,10 +933,7 @@ def main():
 			moveLog.append(str(result))
 
 			if stockfish_plays:
-				if whiteStockfishPlayerEngine != None:
-					whiteStockfishPlayerEngine.set_fen_position(coreBoard.fen())
-				if blackStockfishPlayerEngine != None:
-					blackStockfishPlayerEngine.set_fen_position(coreBoard.fen())
+				whiteStockfishPlayerEngine.set_fen_position(coreBoard.fen())
 
 			if enable_NNUE:
 				analysisEngine.set_fen_position(coreBoard.fen())
@@ -963,9 +961,9 @@ def main():
 				coreBoard.push(chess.Move.from_uci(str(result)))
 				moveLog.append(str(result))
 				if stockfish_plays:
-					if whiteStockfishPlayerEngine != None:
+					if whitePlayer == 'Stockfish N':
 						whiteStockfishPlayerEngine.set_fen_position(coreBoard.fen())
-					if blackStockfishPlayerEngine != None:
+					if blackPlayer == 'Stockfish N':
 						blackStockfishPlayerEngine.set_fen_position(coreBoard.fen())
 			else:
 				pass
@@ -1068,9 +1066,9 @@ def main():
 			moveLog.append(result)
 
 			if stockfish_plays:
-				if whiteStockfishPlayerEngine != None:
+				if whitePlayer == 'Stockfish N':
 					whiteStockfishPlayerEngine.set_fen_position(coreBoard.fen())
-				if blackStockfishPlayerEngine != None:
+				if blackPlayer == 'Stockfish N':
 					blackStockfishPlayerEngine.set_fen_position(coreBoard.fen())
 
 			turnPlayed = True
@@ -1091,9 +1089,9 @@ def main():
 
 
 			try:
-                result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
-            except:
-                result = blackStockfishPlayerEngine.get_best_move()
+				result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
+			except:
+				result = whiteStockfishPlayerEngine.get_best_move()
 
 
 
@@ -1128,10 +1126,10 @@ def main():
 		elif (blackPlayer == "Stockfish N" and turn == "b") and (not turnPlayed):
 
 
-            try:
-                result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
-            except:
-                result = blackStockfishPlayerEngine.get_best_move()
+			try:
+				result = chess.polyglot.MemoryMappedReader('./stockfish/Titans.bin').weighted_choice(coreBoard).move
+			except:
+				result = blackStockfishPlayerEngine.get_best_move()
 
 
 			lc0_moveList.append(result)
@@ -1445,5 +1443,3 @@ os._exit(0)
 
 
 # wow you reached the end! thanks for having read the code :D
-
-
